@@ -96,7 +96,6 @@ data science is the development uses data to understand different goals and obje
 based on understanding of the data we can predict the future aspects we need to know 
 
 it consist of 
-
 - statistical analysis
 - programming
 - data visualisation
