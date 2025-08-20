@@ -1,307 +1,220 @@
-# SDLC(software developement life cycle)
+# SDLC (Software Development Life Cycle)
+
+---
+
+## Section 1
+
+### 🔹 Software Engineer
+
+- A **software engineer** is responsible for designing, creating, testing, and maintaining software.
+- The role involves a **systematic approach** that includes development, operations, and continuous maintenance.
+- Key methodologies and practices such as **Agile, Waterfall, DevOps, Scrum, Software Design, Programming, Testing, Product Management, and Version Control** are all interconnected to make the software development process effective.
+
+![Screenshot](image3/Screenshot_from_2025-08-20_12-12-49.png)
+
+---
+
+### 🔹 Software Development
+
+- Software development is more than just **writing code**; it is essentially about **problem-solving and automating tasks**.
+- The process typically consists of:
+    - Requirement gathering
+    - Finding solutions
+    - Implementing the solution
+    - Testing the software
+    - Deploying it for users
+    - Maintaining and upgrading the system
+
+![Screenshot](image3/Screenshot_from_2025-08-20_13-24-26.png)
+
+---
+
+### 🔹 Product Management
+
+- **Product management** refers to planning, coordinating, and overseeing the development of a software product.
+- It involves checking the **scope, schedule, and budget** to ensure successful delivery.
+- Strong communication, leadership, and problem-solving skills are essential for a product manager.
+
+**How project ideas emerge:**
+
+- Need within an organization
+- Gap in the market
+- Personal requirements
+- Ultimately, the goal is to **automate tasks or solve a specific problem**.
+
+**After finalizing the idea:**
+
+- The first step is to check for **resources and feasibility**.
+- Example: If a company like *Yummy Food* wants to go online, they may collaborate with an IT service company.
+- Before collaboration, certifications like **ISO, ISO/IEC, SOC 2** are checked along with company expertise, technology availability, and relevant experience.
+
+---
+
+## Section 2
+
+### 🔹 Types of Software Development
+
+![Screenshot](image3/Screenshot_from_2025-08-20_12-30-26.png)
+
+1. **Front-End Development**
+    - Focuses on the **user interface and experience** (client-side).
+    - Should be **accessible, interactive, and efficient**, ensuring tasks can be completed quickly with minimal clicks.
+    - Uses technologies like **HTML, CSS, JavaScript**.
+2. **Back-End Development**
+    - Manages **server-side logic, APIs, and databases**.
+    - Ensures scalability, efficiency, and security.
+    - Acts as the “engine” that powers the front-end.
+3. **API Development**
+    - APIs act as **digital glue** that connects different software systems.
+    - Two ways of use: **Architectural APIs** (REST, SOAP, GraphQL, gRPC, WebSockets) and **Programmatic APIs** (built using different programming languages).
+
+    ![Screenshot](image3/Screenshot_from_2025-08-20_12-41-53.png)
+
+
+4. **Data Science Development**
+    - Uses data to derive insights, predict outcomes, and make decisions.
+    - Involves **statistical analysis, programming, data visualization, machine learning, and storytelling**.
+5. **Mobile App Development**
+    - Builds applications for iOS and Android.
+    - Two types: **Native apps** (separate codebases for iOS & Android) and **Hybrid apps** (single codebase but reduced performance).
+6. **Desktop Development**
+    - Applications installed directly on desktops.
+    - Many such functions are now accessible via web browsers.
+7. **Cloud Computing Development**
+    - Stores data securely on the **cloud instead of local devices**.
+    - Uses technologies like **AWS, Docker, Kubernetes**, ensuring scalability and security.
+8. **Full-Stack Development**
+    - A full-stack developer has knowledge of both **front-end and back-end development**, along with APIs, databases, and mobile technologies.
+9. **Game Development**
+    - Involves **graphics design, programming, and production**.
+    - Technologies used: **C++, Unity, Unreal Engine**.
+10. **Embedded Systems Development**
+    - Development of software for **microprocessors and microcontrollers** embedded in devices.
+    - Languages commonly used: **C and Assembly**.
+11. **Progressive Web App (PWA) Development**
+    - PWAs combine the best of web and native apps.
+    - They work offline, load faster, and are accessible across devices.
+    - Use **service workers, web APIs, and web app manifests**.
+12. **Open Source Development**
+    - Involves building software that is **openly shared, modifiable, and collaborative**.
+    - Encourages community contributions.
+13. **Enterprise App Development**
+    - Focuses on creating custom apps for businesses, such as **HR tools or project management apps**.
+14. **E-commerce App Development**
+    - Specialized apps for **online shopping, order tracking, and payments**.
+    - Requires expertise in mobile, front-end, back-end, database, and testing.
+15. **Database Development**
+    - Organizes and manages data efficiently.
+    - Types:
+        - Relational (tabular format)
+        - Non-relational (unstructured, internet-scale)
+        - Object-oriented (uses OOP principles)
+        - Document databases (for unstructured data)
+16. **AI/ML Development**
+    - Involves building models that can **mimic human intelligence**.
+    - Uses algorithms and training data to perform automated tasks and predictions.
 
-# Section 1
+---
 
-## Software Development
+## Section 3
 
-Software development is more than coding it is more like problem solving and automating the task
+### 🔹 Analysis and Planning Phase of SDLC
 
-it consist of 
+- This phase identifies the **problem** the software will solve and defines **requirements and specifications**.
+- It involves:
+    - **High-level requirement gathering** to define features.
+    - **Feasibility analysis** to check if the project is realistic.
+    - **Project scope** to define inclusions and exclusions.
+    - **Project plan** with timelines and resource allocation.
+    - **Risk assessment** to identify possible hurdles.
+    - **Cost considerations** for efficiency.
+- Tools such as **use case diagrams and flowcharts** help in understanding workflow.
+- A **Statement of Work (SOW)** documents the project plan, schedule, and scope.
 
-- Requirement gathering
-- Finding solution
-- Implement the solution
-- Testing
-- Deployment
-- Maintenance
+**Challenges:**
 
-## Software Engineer
+1. Gathering complete and accurate information
+2. Changes in requirements
+3. Estimating time for complex projects
 
-Process of designing creating testing and maintaining software 
-it is the systematic approach of development operations and maintaining software 
+---
 
-it is made of agile ,waterfall ,devops ,software designing ,programming ,scrum ,testing ,product management ,version control
+### Real-Life Example: Food Delivery App
 
-all this is interrelated 
+- **Requirements:** Restaurant listings, food ordering, payments, tracking.
+- **Feasibility:** Check GPS integration, budget, delivery partner availability.
+- **Scope:** In – user app, restaurant dashboard, delivery app, admin panel. Out – drone delivery.
+- **Plan:** 6 months for MVP, small dev team with testers & PM.
+- **Risks:** Partner delays, peak traffic issues, payment downtime.
+- **Cost:** Dev ₹20L, infra ₹5L/year, marketing ₹10L.
 
-## Product Management
+---
 
-it usually means the planning ,coordinating and overseeing the development of the product
+## Section 4
 
-it is describe to check for scope schedule budget of the product 
+### 🔹 Cost Estimation Methods
 
-it is a complex process required comm skills leadership problem solving skills understanding of sw
+1. **Bottom-up Estimation**
+    - Breaks down costs into smaller components and combines them.
+    - Accurate but time-consuming and resource-intensive.
 
-### How project ideas emerges
+    ![image](image3/image.png)
+    
+2. **Top-down Estimation**
+    - Estimates overall project cost at a high level and then divides into components.
+    - Faster but less detailed.
+3. **Three-point Estimation (PERT Method)**
+    - Considers **best-case, most likely, and worst-case** scenarios.
+    - Uses averaging to identify realistic expectations.
 
-Need for the organistion 
+    ![image](image3/image_1.png)
 
-Gap in the market
+4. **Analogous Estimation**
+    - Uses **historical data** from similar projects for cost prediction.
+    - Example: Using past e-commerce app budgets to estimate a new one.
+5. **Parametric Estimation**
+    - Based on **historical data and statistical models**.
+    - Relates cost with project parameters using mathematical models.
 
-Personal requirement 
+---
 
-→ the main goal of this to automate task or to solve a problem 
+## Section 5
 
-### After the idea is finalized
+### 🔹 Requirement Gathering Phase
 
-The first thing will be checked is whether we have the resources 
-with example there is yummy food they want to make their food available online so they will collab with third party it service comapny 
-based on the certifications if they will provide required CIA eg of certificates are iso ,iso/iec ,soc 2
-company need to change this in time checking the experience of the company check for it has all technology required for the product 
+- **Requirements** → What the customer *wants* (simple language).
+- **Specifications** → How developers will *build it* (technical details).
 
-# Section 2
+**How requirements are captured:**
 
-## Types of Software Development
+- Stakeholder meetings, surveys, interviews
+- User personas (who will use it)
+- User stories (what they need)
+- Validation with stakeholders
 
-### 1.Front-end
+**Types of requirements:**
 
-it is the user interaction page from which user can access whatever they want
+- **Functional:** What the system does → *“App should allow users to order food.”*
+- **Non-functional:** Quality → *“Orders must be processed in < 3 sec.”*
+- **System/Business:** Broader → *“App must support iOS & Android.”*
 
-Front-end should be easily accessible interactive and usable 
-it should check how fast work can be done in less time in less clicks
-it is also called client side development as well it can be done using 
+---
 
-- js
-- css
-- html
+### 🏢 Real-Life Example: Online Shopping App
 
-### 2. Back-end
+- A business wants an app for **clothes shopping**.
+- **Functional:** App should have *search bar, cart, payments*.
+- **Non-functional:** App should load in *under 2 seconds*.
+- **System:** Must support *UPI & card payments*.
+- **Business:** Should handle *10,000 users during sales*.
 
-it is the engine that works behind the doors to make apis database and front-end workable 
+ All requirements are documented in an **SRS (Software Requirement Specification)**, which the client signs before development starts.
 
-it operates creation and maintenance of server side logic that works behind the scene 
+---
 
-it should be scalable efficient and security oriented 
+## Section 6
 
-### 3.Application Programming Interface(API)
+### 🔹 UML (Unified Modeling Language)
 
-API allows different software to communicate with each other it acts as a digital glue that connects modern web 
-
-There are two types or a way the APIS are used 
-
-- Architectural Apis
-1. REST Api it uses https for get post update delete 
-2. SOAP it is old technology that uses xml as communication medium (simple object access protocal) 
-3. GraphQl uses the technology to provide only required graphical data it is a query language 
-4. gRPC is remote procedure call framework use programming languages to connect via apis 
-5. websockets it allows bidirectional real time communication between the server
-- Programmatically
-
- it uses different programming languages to create endpoints among them
-
-### 4.Data Science
-
-data science is the development uses data to understand different goals and objective needs to be done or required to achieve goal
-
-based on understanding of the data we can predict the future aspects we need to know 
-
-it consist of 
-- statistical analysis
-- programming
-- data visualisation
-- machine learning
-- storytelling
-
-### 5. Mobile-App
-
-it is basically developing different application for mobile platform like ios and android 
-
-it is of two types native and hybrid 
-in native the code written for android and ios will be different and it will be ios specific 
-whereas in ios it will b single code for ios and android although this cost efficient but the performance will reduce in this type  
-
-### 6. Desktop
-
-installing the individual application on desktop based on requirement but this same thing nowadays we can do via browser 
-
-### 7. Cloud Computing
-
-We cannot store every data on our system as there is risk of memory erase stolen hard disk and all so better keep data on cloud it is sever only that allows use to store our data with proper security 
-
-it uses aws docker kubernatives and many more this techs to work 
-
-### 8. Full-stack
-
-full stack developer is the one who has knowlegde of each and every other development like front-end back-end mobile api etc 
-
-### 9.Game development
-
-creating a game who will have graphic designer programmer producers
-
-programming languages used for this is 
-→c++
-→unity
-→unreal engine
-
-### 10. Embedded system
-
-it is a microprocessor or controller that is used in other devices to perform specific tasks  
-
-c programming is the mostly used for the creating of firmware than assembly language is the other one that is used
-
-### 11. Progressive Web apps
-
-pwa are type of web application only but it is more efficient than native apps 
-
-it uses cache optimally resulting fast less buffer comparatively
-it can provide limited  services without internet also where the native apps cant 
-
-accessible over wide range of devices where native apps are particularly work on the given specified devices 
-it uses technologies like 
-service workers which enables all the services like native app
-
-web apis for apis 
-
-web app manifest is json file that provide meta data of pwa
-
-### 12. open source SWD
-
-open source software is sharing software openly for all user in collaborative manner 
-
-where anyone can view modify changes as per needs 
-
-which could have been done by single individual can work with many with the open source
-
-### 13. Enterprise App
-
-this are the customized app created to help businesses
-like for hr tools , project management etc 
-
-### 13.Ecommerce App
-
-it is apps for the online shopping apps 
-
-where we can buy products online track their orders 
-it need knowledge of mobile development front end backend database testing etc
-
-### 14.Database management system
-
-it use organize data and also we can efficiently find whatever required in simple queries 
-two types of databases
-
-1.relational where everything is organized in tabular form 
-
-2.non relational where data is spread all over eg.internet this are unstructured databses
-
-3.object oriented database where data is stored using oops concept
-
-4.document database where unstructure database is stored 
-
-### 15.AI/ML
-
-it uses algorithm to act like human and perform task there are different modals on which we can train the algorithm to get required automated output 
-
-# Section 3
-
-## Analysis and planning phase of SDLC
-
-it is the identifying and defining the problem that the software product will solve 
-
-defining the requirements and specification for the product 
-plan how it will be done 
-
-this consist of 
-
-- high level requirement gathering where determining the requirements and specification software should meet
-- feasibility means assessing whether a software project can realistically be developed and successfully implemented
-- project scope here it is defined what will be included and what will excluded from the final product
-- project plan this includes creating plan to how to use all the resource and can create timelines etc to get required outcome
-- risk assesment where checking what kind of risk can trouble project outcome
-- cost it shpuld be cost efficient
-
-this block is major block to understand the problem and check what are the requirements and specification and for planning 
-
-we can use use case diagram and flow chart to understand the flow of working how product will work 
-
-creating a project plan where 
-schedule table as well to schedule task to complete the project on time
-
-SOW will have all the plans what e will do to launch this project which is statement of work everything will be written into it 
-
-### challenges
-
-1.gathering complete and accurate information 
-
-2.change in requirements
-
-3.understanding complexity and required time
-
-# Section 4
-
-## Cost estimation
-
-there are 4 type of cost estimation
-
-### 1.Bottom-up
-
-it is a technique where the cost is broken down into individual application and then combined together 
-
-![image.png](image3/image.png)
-
-it can be time consuming and resource intensive
-
-### 2.Top-down
-
-in this estimating overall cost through high level of understanding and then broke down the cost into simple components 
-
-it may be quick to work with but it will not have all the specific details
-
-### 3.Three point
-
-also called pert method
-
-it uses three estimation for best case most likely and worst where based on data  
-
-it uses the avg formula to understand which case likely to happen 
-
-![image.png](image3/image_1.png)
-
-this helps product manager to understand the project plan better
-
-### 4.Analogous
-
-it will work on the past outcome 
-
-like if u want a eCommerce app and then company will look on to similar projects done in past and the budget it took for different features  
-
-### 5.Parametric
-
-it is made of historical data and statistical model 
-
-relation between cost and project parameter it uses mathematical model and not estimation 
-
-# Section 5
-
-## Requirement gathering phase
-
-collection of the requirement for the software product 
-
-where Requirements are high level statements  which captures details from stakeholders 
-
-this is written in normal natural language
-
-whereas the specifications is more technical and detailed it provides blueprint to the dev team 
-
-mostly written in tech language 
-
-**How Requirements are captured?**
-
-- using elicitation techniq
-- engage stakeholders
-- user persona
-- user stories
-- analyse and validdate requirement
-
-requirements will be basically the functionality provided by stakeholders how it should be
-
-non functional feasibility and all 
-
-user interaction 
-
-system and business requirements
-
-SRS software Requirement and Specification document consisting of every interaction defined and will be signed by stakeholder to move forward with project
-
-# Section 6
-
-## UML-unified Modelling language
+- UML is a **standardized modeling language** used to visualize, specify, construct, and document software systems.
+- It helps in representing **workflows, system design, and interactions** through diagrams like **use case, class, sequence, and activity diagrams**.
