@@ -159,7 +159,7 @@
     - Accurate but time-consuming and resource-intensive.
 
     ![image](image3/image.png)
-    
+
 2. **Top-down Estimation**
     - Estimates overall project cost at a high level and then divides into components.
     - Faster but less detailed.
@@ -200,7 +200,7 @@
 
 ---
 
-### 🏢 Real-Life Example: Online Shopping App
+###  Real-Life Example: Online Shopping App
 
 - A business wants an app for **clothes shopping**.
 - **Functional:** App should have *search bar, cart, payments*.
