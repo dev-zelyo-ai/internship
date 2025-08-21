@@ -158,16 +158,21 @@
     - Breaks down costs into smaller components and combines them.
     - Accurate but time-consuming and resource-intensive.
 
-    ![image](image3/image.png)
+    ![image](image3/Screenshot_from_2025-08-21-12-06-44.png)
 
 2. **Top-down Estimation**
     - Estimates overall project cost at a high level and then divides into components.
     - Faster but less detailed.
+
+    ![image](image3/Screenshot_from_2025-08-21-12-07-02.png)
+
 3. **Three-point Estimation (PERT Method)**
     - Considers **best-case, most likely, and worst-case** scenarios.
     - Uses averaging to identify realistic expectations.
 
-    ![image](image3/image_1.png)
+   ## FORMULA
+   ### = (best case + 4*most likely + worst case/ 6 )
+
 
 4. **Analogous Estimation**
     - Uses **historical data** from similar projects for cost prediction.
@@ -221,7 +226,7 @@
 
 ## Types of diagrams
 
-![image.png](SDLC%20(Software%20Development%20Life%20Cycle)%202541b364d39780018157cca2823a0ac9/image.png)
+![image.png](image3/Screenshot-from-2025-08-20_14-11-33.png)
 
 ### Structure Diagrams
 
@@ -622,3 +627,729 @@ An Activity Diagram in UML is a behavioral diagram that models the workflow or
 - Initial Node → Browse Products → Add to Cart → Place Order → Decision (Payment Method: Credit Card or PayPal) → Payment → Final Node.
 
 ![Activity+Diagram.PNG](image3/Activity+Diagram.PNG)
+
+## State machine diagram
+
+A UML State Machine Diagram (also called a state diagram or statechart) is a behavioral diagram that models the different states of an object or system and how it transitions from one state to another in response to specific events
+
+### Key Components
+
+- **States:**
+    
+    Depict the different conditions or situations an object/system can be in, drawn as rounded rectangles—e.g., "Idle," "Processing," "Completed".
+    
+- **Transitions:**
+    
+    Show movement from one state to another, triggered by events. Represented by arrows labeled with triggering events or conditions.
+    
+- **Initial State:**
+    
+    Marks where the lifecycle begins; shown as a filled black circle.
+    
+- **Final State:**
+    
+    Indicates closure or completion; shown as a filled black circle with an outer ring.
+    
+- **Events:**
+    
+    Specific occurrences that cause transitions—e.g., "Order Submitted," "Timeout Occurs."
+    
+- **Actions:**
+    
+    Activities performed during transitions or within states—e.g., "Validate Data," "Send Notification."
+    
+- **Decision/Fork/Join Nodes:**
+    
+    Used to split or merge transitions, enabling concurrent or conditional paths.
+    
+- **Self-transition:**
+    
+    An arrow going back to the same state, modeling behavior that doesn’t change state.
+    
+- **Composite State:**
+    
+    States containing nested substates for complex behaviors.
+    
+
+![State+Machine+diagram.PNG](image3/State+Machine+diagram.PNG)
+
+## Sequence Diagram
+
+A Sequence Diagram in UML is a type of interaction diagram that models how objects or components in a system communicate with each other over time. It visually represents the sequence of messages exchanged between actors and system elements to achieve a specific functionality or scenario.
+
+### Key Components of Sequence Diagrams
+
+- **Lifelines:**
+    
+    Vertical dashed lines representing objects, components, or actors involved in the scenario. Each lifeline is labeled at the top (e.g., **`User`**, **`Order Service`**).
+    
+- **Activation Bars:**
+    
+    Narrow rectangles on lifelines showing when an object is active and executing an operation.
+    
+- **Messages:**
+    
+    Horizontal arrows between lifelines showing communication—method calls, returns, signals. Solid arrows for synchronous calls, open arrows for return, dashed arrows for asynchronous messages.
+    
+- **Actors:**
+    
+    External entities or users interacting with the system, typically drawn as stick figures at the edge of the diagram.
+    
+- **Fragments:**
+    - **Alternative/Optional:** Frames that represent branching behavior (e.g., alt for alternatives, opt for optional scenarios).
+    - **Loop:** Frames showing repeated behavior.
+- **Return Messages:**
+    
+    Arrows indicating responses or return values from calls.
+    
+- **Object Creation/Destruction:**
+    
+    Creation is shown by a message arrow pointing to the bottom of the lifeline; destruction by an 'X' at the bottom.
+    
+    ### Example Scenario: Online Order Placement
+    
+    Actors and lifelines:
+    
+    - User
+    - Shopping Cart
+    - Order Service
+    - Payment Gateway
+    
+    Sequence of steps:
+    
+    1. User sends "addProduct()" to Shopping Cart
+    2. Shopping Cart sends "createOrder()" to Order Service
+    3. Order Service sends "processPayment()" to Payment Gateway
+    4. Payment Gateway returns "success" to Order Service
+    5. Order Service returns "orderConfirmed" to User
+
+![Sequence+diagram.PNG](image3/Sequence+diagram.PNG)
+
+## Communication Uml diagram
+
+A UML Communication Diagram is an interaction diagram that visually represents how objects and actors collaborate within a system by passing sequenced messages to achieve a specific function or scenario. It emphasizes the structural relationships and the flow of information between objects, focusing both on the configuration of links and the messages exchanged.
+
+### Key Components of Communication Diagrams
+
+- **Objects/Roles:**
+    
+    Depicted as rectangles, these represent the system’s objects, components, or actors participating in the interaction.
+    
+- **Links:**
+    
+    Lines connecting objects to show their relationships or ability to communicate.
+    
+- **Messages:**
+    
+    Arrows placed along the links with the message name and its sequence number (such as 1.0, 1.1, 2.0) indicating the order of communication. They specify which object sends a message to which object and in what sequence.
+    
+- **Sequence Numbers:**
+    
+    Decimal numbering (e.g., 1.1, 1.2) clarifies the order and dependencies among multiple messages, useful for complex interactions.
+    
+- **Frame (Optional):**
+    
+    Encloses the diagram, sometimes labeled to describe the interaction scenario.
+    
+
+---
+
+### Differences from Sequence Diagram
+
+- Focuses on the **structural relationships** and links between objects rather than on message timing.
+- Sequence numbers indicate message order rather than vertical position.
+- Layout is more free-form, not strictly top-to-bottom.
+
+### Example Scenario: ATM Withdrawal
+
+- **Objects/Roles:** User, ATM, Bank
+- **Links:** User—ATM, ATM—Bank
+- **Messages (with sequence numbers):**
+    - 1.0: User inserts card to ATM
+    - 2.0: ATM requests account info from Bank
+    - 2.1: Bank returns account info to ATM
+    - 3.0: ATM dispenses cash to User
+
+Objects are connected, and arrows with numbers show who sends each message, in what sequence.
+
+![Communication+Diagram.PNG](image3/Communication+Diagram.PNG)
+
+## Timing Uml diagram
+
+A UML Timing Diagram is a specialized interaction diagram that focuses on the behavior of objects over time, particularly emphasizing the timing constraints and changes in state or condition during a process. It is useful to represent time-based behaviors and the changes within or among different objects or system components
+
+### Key Components of Timing Diagrams
+
+- **Lifelines:**
+    
+    Represent the objects or components whose behavior is being timed, shown as vertical dashed lines.
+    
+- **State or Condition Lifeline:**
+    
+    Shows the states or conditions of an object/part over time, represented as a waveform or state changes along the lifeline.
+    
+- **Time Axis:**
+    
+    The horizontal axis represents time flowing from left to right.
+    
+- **Events and Messages:**
+    
+    Represent change points where states transition or interactions occur.
+    
+- **Duration Constraints:**
+    
+    Specify time intervals or constraints on how long a state lasts.
+    
+- **Focus of Control:**
+    
+    Indicated by a narrow rectangle on a lifeline, showing the period an object is active or controlling the flow.
+    
+
+### Example Scenario: Traffic Light Control
+
+- Lifelines for traffic light controller and traffic signal lights.
+- States changing between "Red," "Green," and "Yellow" over time.
+- Timing constraints specify duration for each state (e.g., green lasts 60 seconds).
+
+![Timing+Diagram+1.PNG](image3/Timing+Diagram+1.PNG)
+
+## **Interaction Overview Diagram**
+
+An Interaction Overview Diagram in UML is a type of behavioral diagram that combines elements of activity diagrams and sequence diagrams to provide a high-level view of the control flow between various interactions or interaction fragments within a system. It organizes complex interactions into manageable sections, showing the sequence and flow among them.
+
+---
+
+### Key Features of Interaction Overview Diagrams
+
+- **Combination of Diagrams:**
+    
+    It blends activity diagram elements (such as decision nodes, forks, joins) with interaction diagrams (like sequence diagrams and communication diagrams) as interaction occurrences or fragments.
+    
+- **Interaction Occurrences:**
+    
+    Represented as rectangles with a sequence diagram’s frame notation (e.g., **`ref`** keyword), these call other interaction diagrams or fragments.
+    
+- **Control Flow:**
+    
+    Arrows show the flow from one interaction occurrence to another, similar to activity diagram flows.
+    
+- **Decision and Merge Nodes:**
+    
+    Used to branch and merge flows, managing alternative and concurrent paths.
+    
+- **Initial and Final Nodes:**
+    
+    Represent the start and end of the interaction overview.
+    
+
+![Interaction+overview+diagram+1.PNG](image3/Interaction+overview+diagram+1.PNG)
+
+## Section 7
+
+## Designing and Prototypes
+
+In the Software Development Life Cycle (SDLC), the Design and Prototyping phases are critical for transforming gathered requirements into a blueprint for building the system and for creating early models to validate concepts and gather user feedback.
+
+---
+
+### Design Phase
+
+### Purpose
+
+- To create a detailed plan or blueprint that specifies how the system will fulfill the requirements gathered.
+- Establishes system architecture, components, interfaces, and data structures.
+
+### Activities
+
+- **Architectural Design:** Defining the overall system structure, major components, their relationships, and technologies to be used.
+- **Detailed Design:** Designing individual modules, database schema, user interfaces, algorithms, and data flows.
+- **Interface Design:** Specifying how different system components and users interact.
+- **Design Documentation:** Producing design documents like software design specifications, UML diagrams (class, sequence, activity diagrams), and interface mockups.
+
+### Outcome
+
+- A comprehensive design document guiding developers during implementation.
+- Clear specifications to ensure consistency, reduce ambiguities, and facilitate maintenance.
+
+---
+
+### Prototyping Phase
+
+### Purpose
+
+- To create an early, simplified version or model of parts of the system to visualize features, validate requirements, and gather user feedback.
+- Helps in refining requirements before full-scale development.
+
+### Types of Prototypes
+
+- **Throwaway/Rapid Prototyping:** Quickly built to explore ideas and discarded after feedback.
+- **Evolutionary Prototyping:** Developed incrementally and refined into the final system.
+- **Incremental Prototyping:** Built in parts and integrated later.
+- **Extreme Prototyping:** Often used in web development with three phases — static mockup, interactive UI, and working system.
+
+### Benefits
+
+- Clarifies user requirements and expectations.
+- Improves user involvement and satisfaction.
+- Reduces risks and miscommunication by validating ideas early.
+- Guides design improvement and better system usability.
+
+---
+
+### Relationship Between Design and Prototyping
+
+- Prototyping may be integrated within or precede detailed design.
+- Prototypes act as a proof of concept that informs and influences system design decisions.
+- Both phases promote iterative refinement and validation.
+
+## what actually happens during the phase?
+
+### Design Phase
+
+- The system’s overall architecture and blueprint are created based on the requirements gathered.
+- Detailed plans are made for components, data structures, user interfaces, and system interactions.
+- UML diagrams and technical documentation are produced to guide developers.
+- Decisions about technologies, platforms, and standards to be used are finalized.
+- The design ensures the system will meet functional and non-functional requirements efficiently and reliably.
+
+### Prototyping Phase
+
+- A simplified version or model of the system (or parts of it) is built quickly.
+- This prototype shows how the system will work, allowing users and stakeholders to visualize features early.
+- Feedback is gathered from users to refine and clarify requirements and design.
+- Prototypes help detect issues early, reducing risks and improving user satisfaction.
+- Based on feedback, designs and requirements may be adjusted before the full development begins.
+
+---
+
+## Why this is important?
+
+1. **Ensure Clear Understanding of Requirements:**
+    
+    Design translates user requirements into detailed plans, reducing ambiguities and misunderstandings that could lead to project failures.
+    
+2. **Provide a Blueprint for Development:**
+    
+    A well-defined design guides developers on what to build, how components interact, and how the system functions as a whole, ensuring consistency and quality.
+    
+3. **Identify and Resolve Problems Early:**
+    
+    Prototyping allows early visualization and testing of features, helping catch issues, misunderstandings, or usability problems before costly coding begins.
+    
+4. **Reduce Risks and Costs:**
+    
+    Detecting and fixing design or requirement issues early in these phases is much less expensive than later during implementation or after deployment.
+    
+5. **Improve User Involvement and Satisfaction:**
+    
+    Prototypes engage users by showing tangible models of the system early on, enabling feedback and adjustments that make the final product more aligned with user needs.
+    
+6. **Facilitate Communication Among Stakeholders:**
+    
+    Design documents and prototypes provide common references for developers, users, and managers, enhancing collaboration and shared understanding.
+    
+7. **Enhance Flexibility and Iterative Improvement:**
+    
+    These phases support iterative refinement, allowing changes and improvements without derailing the entire project.
+    
+
+## Challenges
+
+### Challenges in Design Phase
+
+1. **Incomplete or Ambiguous Requirements:**
+    
+    Unclear, changing, or missing requirements make it difficult to create an accurate and comprehensive design.
+    
+2. **Complexity Management:**
+    
+    Designing complex systems with many interacting components requires balancing detail and simplicity, which can be challenging.
+    
+3. **Technology Constraints:**
+    
+    Choosing appropriate technologies and ensuring compatibility may limit design options.
+    
+4. **Communication Gaps:**
+    
+    Misunderstandings between business stakeholders, designers, and developers can lead to flawed designs.
+    
+5. **Scalability and Flexibility:**
+    
+    Designing systems that can evolve and scale over time while meeting current needs is difficult.
+    
+
+---
+
+### Challenges in Prototyping Phase
+
+1. **Scope Creep:**
+    
+    Prototypes might lead to expanded expectations and additional features beyond initial requirements.
+    
+2. **Resource and Time Constraints:**
+    
+    Rapid development of prototypes can strain resources, especially if multiple iterations are needed.
+    
+3. **User Feedback Misinterpretation:**
+    
+    Feedback can sometimes be vague or contradictory, making it hard to translate into design improvements.
+    
+4. **Prototype Misuse:**
+    
+    Treating prototypes as final products or neglecting proper design documentation can cause problems in later phases.
+    
+5. **Balancing Detail:**
+    
+    Creating prototypes too detailed can waste effort, while too simple prototypes may not provide sufficient insights.
+    
+
+## High level Diagram
+
+A High-Level Design (HLD) Diagram is a visual representation that outlines the overall system architecture and major components of a software application without delving into detailed internal functionalities. It provides a big-picture view of the system, illustrating how different modules, services, or subsystems interact with each other and with external entities.
+
+---
+
+### Key Characteristics of High-Level Design Diagram
+
+- **Focus on Structure:**
+    
+    Shows primary system components or modules and their relationships.
+    
+- **Abstraction:**
+    
+    Avoids low-level details like internal class structures or specific algorithms.
+    
+- **Interface Definition:**
+    
+    Highlights the interfaces between modules and with external systems.
+    
+- **Technology Overview:**
+    
+    May indicate technologies, platforms, or databases used by components.
+    
+- **Communication:**
+    
+    Displays data flow or communication paths between components.
+    
+
+### Purpose of High-Level Design
+
+- To give stakeholders and developers a clear overview of system architecture.
+- To facilitate understanding of the system’s organization and major interactions.
+- To identify dependencies and integration points early.
+- To serve as a reference for detailed design and development phases.
+
+### Key Features of High-Level Design Diagrams:
+
+- Focus on system architecture and main components
+- Display modules, external systems, and their relationships
+- Show data flow and interfaces between components
+- Abstract and technology-agnostic, avoiding implementation details
+
+### Example (E-commerce System HLD):
+
+- Web Application Module interacts with
+- Payment Gateway Service,
+- Product Catalog Service,
+- Inventory Database,
+- User Authentication Service,
+    
+    with arrows showing interface and data flow between them.
+    
+
+![HLD.png](image3/HLD.png)
+
+## Data flow diagram
+
+A Data Flow Diagram (DFD) is a graphical representation used to visualize the flow of data within a system. It shows how data moves from external sources into the system, how it is processed by various components, and how it is stored or outputted. DFDs focus on the processes that transform data and the data stores within the system, making them useful for understanding system functions and data handling.
+
+---
+
+### Key Components of a Data Flow Diagram
+
+- **External Entities:**
+    
+    Sources or destinations of data outside the system (e.g., customers, suppliers). Represented by rectangles.
+    
+- **Processes:**
+    
+    Activities or functions that receive input data, process it, and produce output. Shown as circles or rounded rectangles.
+    
+- **Data Stores:**
+    
+    Places where data is stored within the system (e.g., databases, files). Depicted as open-ended rectangles or parallel lines.
+    
+- **Data Flows:**
+    
+    Arrows illustrating the movement of data between external entities, processes, and data stores.
+    
+
+![8.5+Resource+DFD+diagram+Final.png](image3/8.5+Resource+DFD+diagram+Final.png)
+
+## Low level diagram
+
+Low-Level Design (LLD) is the detailed design phase in the Software Development Life Cycle (SDLC) where the system's components and modules are designed at a very granular level. It builds upon the High-Level Design (HLD) by specifying the internal logic, data structures, algorithms, and interfaces required for implementation.
+
+---
+
+### Key Characteristics of Low-Level Design
+
+- **Detailed Component Design:**
+    
+    Defines the internal workings of each module or class including methods, attributes, and internal workflows.
+    
+- **Focus on Implementation:**
+    
+    Specifies data types, function signatures, control flow, and error handling.
+    
+- **Class and Object Design:**
+    
+    Includes UML class diagrams, sequence diagrams, and state diagrams for modules.
+    
+- **Database Design:**
+    
+    Describes detailed database schemas, tables, relationships, and queries.
+    
+- **Interface Details:**
+    
+    Specifies APIs, data formats, protocols, and interaction contracts between components.
+    
+- **Algorithm Descriptions:**
+    
+    Documents detailed logic, pseudocode, or flowcharts for complex operations.
+    
+
+## UI/UX
+
+UI (User Interface) and UX (User Experience) are closely related but distinct concepts in the design of digital products such as websites, applications, and software.
+
+---
+
+### User Interface (UI)
+
+- **Definition:**
+    
+    UI refers to the visual elements with which users interact. It includes the layout, buttons, icons, text fields, colors, fonts, images, and overall aesthetics.
+    
+- **Focus:**
+    
+    Designing the look and feel of the product to make it visually appealing and easy to navigate.
+    
+- **Components:**
+    - Screens, pages, and visual elements
+    - Interactive components like buttons, sliders, checkboxes
+    - Layouts and typography
+    - Responsive design for different devices
+- **Goal:**
+    
+    Create an intuitive, attractive interface that helps users accomplish tasks efficiently.
+    
+
+---
+
+### User Experience (UX)
+
+- **Definition:**
+    
+    UX encompasses the overall experience a user has when interacting with a product, including usability, accessibility, performance, and emotional satisfaction.
+    
+- **Focus:**
+    
+    Enhancing users’ satisfaction by improving the ease of use, efficiency, and pleasure in interacting with the system.
+    
+- **Goal:**
+    
+    Ensure the product meets the needs of users, solves problems effectively, and provides a positive emotional experience.
+    
+
+---
+
+### Relationship Between UI and UX
+
+- UI is a part of UX, focusing specifically on the product’s surface and interactive elements.
+- UX covers the broader context of the user’s interaction, including UI but also factors like functionality, performance, and overall satisfaction.
+- Good UI contributes to good UX, but great UX requires thoughtful design beyond just UI.
+
+---
+
+### Importance of UI/UX
+
+- Better UI/UX leads to increased user engagement, satisfaction, and retention.
+- Affects brand perception positively.
+- Reduces support costs by minimizing user errors and confusion.
+- Drives business success through better conversion and customer loyalty.
+
+## wireframe diagram
+
+A Wireframe Diagram is a simple, skeletal visual guide that represents the layout and structure of a user interface (UI) for a website, software application, or mobile app. It outlines the placement and arrangement of elements like headers, buttons, images, content areas, and navigation without focusing on color, graphics, or detailed design.
+
+---
+
+### Characteristics of Wireframe Diagrams
+
+- Use basic shapes (boxes, lines, placeholders) to indicate UI components.
+- Focus on functionality, content hierarchy, and interaction flow rather than aesthetics.
+- Include annotations or notes to describe functionality or behavior of elements.
+- Typically low-fidelity and quick to create for easy changes and feedback.
+
+![8.8.Resource+Wireframe+diagram.png](image3/8.8.Resource+Wireframe+diagram.png)
+
+## **High-Fidelity (Hi-Fi) and Low-Fidelity (Lo-Fi) Diagrams**
+
+High-Fidelity (Hi-Fi) and Low-Fidelity (Lo-Fi) Diagrams are terms used in design and prototyping to describe different levels of detail and realism in visual representations of user interfaces or systems.
+
+---
+
+### Low-Fidelity (Lo-Fi) Diagrams
+
+- **Definition:**
+    
+    Simplified, basic sketches or wireframes that focus on structure, layout, and functionality without detailed graphics.
+    
+- **Characteristics:**
+    - Use simple shapes and placeholders (boxes, lines).
+    - Minimal or no color, typography, or images.
+    - Quick to create and easy to modify.
+    - Represent broad concepts and workflows rather than specifics.
+- **Purpose:**
+    - Explore ideas and concepts rapidly.
+    - Facilitate early feedback and brainstorming.
+    - Communicate basic layout and interaction flow.
+- **Examples:**
+    
+    Rough sketches on paper, basic wireframes, block diagrams.
+    
+
+### High-Fidelity (Hi-Fi) Diagrams
+
+- **Definition:**
+    
+    Detailed, polished, and interactive representations that closely resemble the final product visually and functionally.
+    
+- **Characteristics:**
+    - Include real content, colors, fonts, images, and detailed graphics.
+    - Interactive elements for usability testing and demonstration.
+    - Require more time and effort to develop.
+    - Simulate user experience accurately.
+- **Purpose:**
+    - Validate detailed design and UI elements.
+    - Conduct user testing and gather precise feedback.
+    - Serve as a blueprint for developers during implementation.
+- **Examples:**
+    
+    Interactive prototypes, pixel-perfect mockups, detailed UI designs.
+    
+
+| **Aspect** | **Low Fidelity Diagram** | **High Fidelity Diagram** |
+| --- | --- | --- |
+| Detail Level | Basic, minimal detail | Comprehensive, detailed |
+| Visuals | Simple shapes, placeholders | Full color, typography, images |
+| Interactivity | Usually static | Often interactive |
+| Development Speed | Fast | Slower |
+| Purpose | Early idea exploration, layout | Final design validation |
+| Use Case | Conceptual discussion, quick feedback | Usability testing, client presentations |
+
+## Database schema design diagram
+
+A Database Schema Design Diagram visually represents the structure of a database, outlining tables, fields, data types, and relationships among tables. It is essential for designing and documenting how data is organized and accessed within a database.
+
+---
+
+### Key Components of Database Schema Design Diagrams
+
+- **Tables (Entities):**
+    
+    Represent data objects or concepts, shown as rectangles with the table name at the top.
+    
+- **Columns (Attributes):**
+    
+    Listed inside tables, defining fields with their data types and constraints (e.g., primary key, NOT NULL).
+    
+- **Primary Keys (PK):**
+    
+    Unique identifiers for records in a table, often underlined or marked.
+    
+- **Foreign Keys (FK):**
+    
+    Fields that link to primary keys in other tables, defining relationships.
+    
+- **Relationships:**
+    
+    Lines connecting tables, often annotated to show cardinality (one-to-one, one-to-many, many-to-many).
+    
+- **Cardinality and Participation:**
+    
+    Indicate how many records in one table relate to records in another (e.g., one customer can have many orders).
+    
+
+![8.10.Resource-Database+Schema+Design+Diagram.png](image3/8.10.Resource-Database+Schema+Design+Diagram.png)
+
+## Software Architecture
+
+**Software Architecture** refers to the high-level structure of a software system, encompassing the organization of its components, their relationships, and the principles guiding its design and evolution. It serves as a blueprint that defines how the system will meet functional and non-functional requirements, ensuring scalability, maintainability, performance, and security.
+
+---
+
+### Key Aspects of Software Architecture
+
+- **Components:**
+    
+    Modular building blocks such as services, modules, classes, or subsystems.
+    
+- **Relationships:**
+    
+    Connections and communication paths between components.
+    
+- **Architectural Styles and Patterns:**
+    
+    Common approaches like Client-Server, Layered Architecture, Microservices, Event-Driven, MVC (Model-View-Controller), etc.
+    
+- **Design Principles:**
+    
+    Guidelines such as separation of concerns, modularity, loose coupling, and high cohesion.
+    
+- **Quality Attributes:**
+    
+    Non-functional requirements like scalability, reliability, performance, security, and usability influencing architectural decisions.
+    
+
+### Signs of good architecuture
+
+1. **Modularity:**
+    
+    The system is divided into well-defined, independent modules or components, making it easier to develop, test, understand, and maintain.
+    
+2. **Scalability:**
+    
+    The architecture can handle increased loads or expand functionality without major redesign.
+    
+3. **Maintainability:**
+    
+    The design allows for easy updates, bug fixes, and enhancements with minimal impact on other parts.
+    
+4. **Reusability:**
+    
+    Components or modules can be reused across different parts of the application or in other projects.
+    
+5. **Performance Efficiency:**
+    
+    The system meets its required performance criteria, such as response time, throughput, and resource utilization.
+    
+6. **Flexibility/Extensibility:**
+    
+    It can adapt to changing requirements or technologies with minimal effort.
+    
+7. **Reliability and Availability:**
+    
+    The architecture supports consistent and dependable operation, minimizing downtime or failures.
+    
+8. **Security:**
+    
+    It includes mechanisms for protecting data and controlling access according to requirements.
+    
+9. **Simplicity and Clarity:**
+    
+    The design is clear, straightforward, and easy to understand, avoiding unnecessary complexity.
+    
+
+![9.1.Resource+software+architecture+diagram.png](image3/9.1.Resource+software+architecture+diagram.png)
