@@ -25,7 +25,7 @@
     - Deploying it for users
     - Maintaining and upgrading the system
 
-![Screenshot](image3/Screenshot_from_2025-08-20_13-24-26.png)
+![Screenshot](image3/Screenshot_from_2025-08-22_12-14-28.png)
 
 ---
 
@@ -54,7 +54,7 @@
 
 ### 🔹 Types of Software Development
 
-![Screenshot](image3/Screenshot_from_2025-08-20_12-30-26.png)
+![Screenshot](image3/Screenshot_from_2025-08-22_14-14-03.png)
 
 1. **Front-End Development**
     - Focuses on the **user interface and experience** (client-side).
@@ -116,6 +116,155 @@
 
 ---
 
+# Real Life Case Study on why different types of software development require
+
+Let’s take **Amazon** as a case study because it covers almost every software development domain
+
+## **How Amazon Uses Different Types of Software Development**
+
+### 1. **Front-End Development**
+
+- **Use at Amazon:** The **Amazon website and mobile site UI** where customers browse products, add to cart, and check out.
+- **Why needed:** To make the shopping experience smooth, accessible, with fewer clicks to order.
+- **Tech:** HTML, CSS, JavaScript, React.
+
+---
+
+### 2. **Back-End Development**
+
+- **Use at Amazon:** Handles order processing, payment validation, recommendation engines, user authentication, inventory management.
+- **Why needed:** Ensures the system is **scalable, efficient, and secure**.
+- **Tech:** Java, Node.js, Python, Scala, Microservices.
+
+---
+
+### 3. **API Development**
+
+- **Use at Amazon:** APIs connect the front-end web app to back-end systems like payments, shipping, seller dashboards, and even Alexa.
+- **Example:** When you track your Amazon delivery, the app hits an **Order Status API** to fetch real-time updates.
+- **Types Used:** REST APIs, GraphQL for data queries, WebSockets for live tracking.
+
+---
+
+### 4. **Data Science Development**
+
+- **Use at Amazon:** Personalized recommendations (“Customers who bought this also bought”), predicting delivery times, fraud detection, demand forecasting.
+- **Why needed:** Data enriches decision-making and enhances customer satisfaction.
+- **Tools:** Python, R, Pandas, Machine Learning models.
+
+---
+
+### 5. **Mobile App Development**
+
+- **Use at Amazon:** The **Amazon Shopping app** on iOS & Android lets customers shop anywhere with push notifications.
+- **Native vs Hybrid:** Amazon generally uses **native apps** for better performance.
+
+---
+
+### 6. **Desktop Development**
+
+- **Use at Amazon:** Internal tools (like customer service support dashboards, logistics tracking software) often run as **desktop apps**.
+- Example: An Amazon warehouse worker might use a desktop app for barcode scanning and shipment processing.
+
+---
+
+### 7. **Cloud Computing Development**
+
+- **Use at Amazon:** Amazon Web Services (AWS) is not only the provider but also the backbone of Amazon’s own platform.
+- **Why needed:** To scale massively for peak events like **Prime Day** when millions of users shop simultaneously.
+- **Tech:** AWS, Docker, Kubernetes, Serverless Lambda functions.
+
+---
+
+### 8. **Full-Stack Development**
+
+- **Use at Amazon:** A **full-stack developer** at Amazon might build a new feature like “Multi-address delivery”:
+    - **Front-end:** UI for users to select multiple addresses.
+    - **Back-end:** Service to split orders.
+    - **API:** Connects front-end with logistics.
+    - **Database:** Stores multi-shipment info.
+
+---
+
+### 9. **Game Development**
+
+- **Use at Amazon:** Not obvious at first, but Amazon owns **Twitch** and **Amazon Games**.
+- **Why needed:** To build engaging gaming experiences, streaming overlays, and production of AAA games.
+- **Tech:** C++, Unity, Unreal Engine.
+
+---
+
+### 10. **Embedded Systems Development**
+
+- **Use at Amazon:** In devices like **Amazon Echo (Alexa), Kindle, Fire TV, Ring Doorbell**.
+- **Why needed:** Embedded software runs on the microcontrollers inside these consumer devices.
+- **Tech:** C, Assembly, IoT firmware.
+
+---
+
+### 11. **Progressive Web App (PWA) Development**
+
+- **Use at Amazon:** Amazon India once tested a **lite version of its app** using PWA for users with slower internet speeds.
+- **Why needed:** PWAs work offline, load faster, good for regions with limited connectivity.
+
+---
+
+### 12. **Open Source Development**
+
+- **Use at Amazon:** Amazon contributes to many open-source tools (e.g., **AWS SDKs, Deep Java Library, Firecracker microVMs**).
+- **Why needed:** Encourages community contributions and improves developer adoption.
+
+---
+
+### 13. **Enterprise App Development**
+
+- **Use at Amazon:** Internal HR systems (for employee onboarding, payroll), tools for vendor management, massive workflow apps for supply chain.
+- **Why needed:** Smoothens management of a **hyper-large enterprise**.
+
+---
+
+### 14. **E-commerce App Development**
+
+- **Use at Amazon:** The **core Amazon shopping app and website** fall under this.
+- Features: Product browsing, reviews, shopping cart, order placement, payments, and returns.
+- Requires **testing across front-end, back-end, mobile, and payment systems**.
+
+---
+
+### 15. **Database Development**
+
+- **Use at Amazon:**
+    - **Relational DB:** Orders, payments (e.g., MySQL, Aurora).
+    - **NoSQL (DynamoDB):** Product catalog at internet scale.
+    - **Document DB:** User preferences, search history.
+    - **Graph DB:** Recommendation engine connections.
+
+---
+
+### 16. **AI/ML Development**
+
+- **Use at Amazon:**
+    - **Alexa Voice Assistant** (Speech Recognition + NLP).
+    - **Amazon Rekognition** (AI for image/video analysis used in Ring & AWS).
+    - **Recommendation systems** (personalized shopping).
+    - **Warehouse robots** powered by **Computer Vision + ML**.
+    - **Fraud detection** in payment systems.
+
+---
+
+### **Summary Visualization**
+
+If we put it together:
+
+- **Customer facing:** Front-End, Mobile, PWA, E-Commerce Dev.
+- **Behind the scenes:** Back-End, APIs, Databases, Full-Stack.
+- **Scalable infrastructure:** Cloud Computing, Enterprise Apps.
+- **Advanced experiences:** AI/ML, Data Science, Game Dev (Twitch).
+- **Devices:** Embedded Systems.
+- **Cultural/engineering contributions:** Open Source.
+
+---
+
 ## Section 3
 
 ### 🔹 Analysis and Planning Phase of SDLC
@@ -171,7 +320,8 @@
     - Uses averaging to identify realistic expectations.
 
    ## FORMULA
-   ### = (best case + 4*most likely + worst case/ 6 )
+
+    ### = (best case + 4*most likely + worst case/ 6 )
 
 
 4. **Analogous Estimation**
@@ -226,7 +376,7 @@
 
 ## Types of diagrams
 
-![image.png](image3/Screenshot-from-2025-08-20_14-11-33.png)
+![image.png](image3/Screenshot_from_2025-08-22_13-31-43.png)
 
 ### Structure Diagrams
 
@@ -300,7 +450,7 @@ Interaction diagrams focus on how components or objects collaborate and exchange
 
 ### Class Uml diagram
 
-![image.png](image3/Screenshot-from-2025-08-20-14-45-08.png)
+![image.png](image3/Screenshot_from_2025-08-22_12-20-33.png)
 
 1. **Class**
     - Represents a blueprint or template for objects (instances).
@@ -344,7 +494,7 @@ Interaction diagrams focus on how components or objects collaborate and exchange
 
 it is the snapshot taken at some instance of a time
 
-![Screenshot.png](image3/Screenshot-from-2025-08-20-15-12-28.png)
+![Screenshot.png](image3/Screenshot_from_2025-08-22_2-20-46.png)
 
 ### Key Characteristics of UML Object Diagrams
 
@@ -374,12 +524,12 @@ It is a structural diagram used to visualize the organization, modular parts (co
     - **Provided Interface:** Services a component offers, shown as a "lollipop" circle attached to the component.
     - **Required Interface:** Services needed by a component, shown as a "socket" (half circle) that connects to a provided interface.
     
-    ![image.png](image3/Screenshot-from-2025-08-20-15-33-29.png)
+    ![image.png](image3/Screenshot_from_2025-08-22_12-32-41.png)
     
 3. **Ports**
     - Interaction points on the boundary of a component where interfaces are accessed. Represented as small squares on the component boundary
 
-![Screenshot from 2025-08-20 15-33-08.png](image3/Screenshot-from-2025-08-20-15-33-08.png)
+![Screenshot from 2025-08-20 15-33-08.png](image3/Screenshot_from_2025-08-22_12-34-48.png)
 
 4.**Relationships and Connectors**
 
@@ -458,7 +608,7 @@ A deployment diagram for a web application might show:
 
 Composite Structure Diagram is a type of structural UML diagram that shows the internal structure of a classifier (such as a class, component, or deployment node) and the interactions between its parts at runtime
 
-![image.png](image3/Screenshot-from-2025-08-20-16-40-01.png)
+![image.png](image3/Screenshot_from_2025-08-22_12-40-51.png)
 
 ### Key Components of a Composite Structure Diagram
 
@@ -534,7 +684,7 @@ Suppose you are modeling a network system and want to represent network-specific
 - Add tagged values such as **`manufacturer`** or **`IP address`** to these stereotypes.
 - Use these stereotypes in your model to clearly indicate network components with domain-specific semantics.
 
-![Pasted_image.png](image3/Pasted_image.png)
+![image.png](image3/Screenshot_from_2025-08-22_12-48-44.png)
 
 ## Use case uml Diagram
 
@@ -1057,7 +1207,7 @@ A High-Level Design (HLD) Diagram is a visual representation that outlines the
     with arrows showing interface and data flow between them.
     
 
-![HLD.png](image3/HLD.png)
+![HLD.png](image3/hld.png)
 
 ## Data flow diagram
 
