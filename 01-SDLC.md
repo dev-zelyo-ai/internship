@@ -1686,7 +1686,7 @@ Each layer interacts only with the layer directly below or above it. For example
 
 ---
 
-![9.1.Resource+software+architecture+diagram.png](SDLC%20(Software%20Development%20Life%20Cycle)%202541b364d39780018157cca2823a0ac9/9.1.Resourcesoftwarearchitecturediagram%201.png)
+
 
 ## Microservices Architecture
 
