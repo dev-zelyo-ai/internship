@@ -2280,3 +2280,996 @@ Versioning helps in identifying what features, updates, and bug fixes are includ
 - **Supports Compatibility:** Helps ensure that software and dependencies match supported versions.
 - **Improves Collaboration:** Facilitates communication about software states across teams.
 - **Facilitates Continuous Deployment:** Automates deployment pipelines and release management.
+
+
+# Section 9
+
+## Development Phase
+
+### Development Phase in Software Development Life Cycle (SDLC)
+
+The Development Phase (also called Implementation or Coding phase) is the stage in the SDLC where the actual source code for the software application is written based on the design specifications prepared in the previous phase.
+
+---
+
+### Key Aspects of the Development Phase
+
+- **Coding:** Developers write code in the chosen programming languages, frameworks, and tools aligned with the software design documents.
+- **Task Breakdown:** Large requirements and design are divided into smaller coding tasks or modules to be implemented incrementally.
+- **Standards and Guidelines:** Coding follows organization-specific standards and best practices for consistency, readability, and maintainability.
+- **Version Control:** Source code is managed using version control systems for tracking and collaboration.
+- **Code Reviews:** Peers frequently review code for quality assurance and early bug detection.
+- **Unit Testing:** Developers write and run tests on individual components to verify correctness during coding.
+- **Integration Preparation:** Integration points with other components or systems are implemented to enable subsequent phases.
+
+---
+
+### Deliverables from Development Phase
+
+- Source code files
+- Build scripts and configuration files
+- Unit test cases and test results
+- Updated documentation reflecting the implementation details
+
+---
+
+### Role in the SDLC
+
+The development phase transforms design documentation into a working software product. It requires close coordination with testing teams to ensure early detection and resolution of defects. Efficient development practices affect overall project success, timeline, and final software quality
+
+## Challenges
+
+1. **Requirement Ambiguity or Changes**
+    - Unclear, incomplete, or frequently changing requirements can lead to coding rework and confusion.
+2. **Time and Resource Constraints**
+    - Limited schedules and staffing pressures force rushed coding, which can increase errors and technical debt.
+3. **Complexity of Codebase**
+    - Managing large, complex codebases with multiple modules and dependencies can lead to integration problems.
+4. **Communication Gaps**
+    - Misalignment or poor communication between developers, designers, and testers causes misunderstandings and delays.
+5. **Technical Debt and Legacy Code Issues**
+    - New code built on outdated or poorly maintained legacy systems can be difficult to maintain or extend.
+6. **Testing and Debugging Overheads**
+    - Inadequate unit testing or delayed bug fixing can cause defects to propagate to later stages, increasing cost and effort.
+7. **Integration Complexities**
+    - Combining different components or services developed independently can cause unforeseen conflicts and errors.
+
+## Code Coverage
+
+### Definition
+
+**Code coverage** is a software testing metric that measures the percentage of source code executed during testing. It helps identify which parts of the code have been tested and which remain untested, providing insight into the effectiveness and completeness of the test suite.
+
+---
+
+### How Code Coverage Works
+
+- Instrumentation code is added to track which parts of the code are executed during test runs.
+- As tests execute, data is collected about executed lines, branches, functions, or conditions.
+- The coverage percentage is calculated based on executed code elements versus the total code elements.
+
+---
+
+### Types of Code Coverage
+
+1. **Statement Coverage:** Measures whether each line or statement in the code has been executed.
+2. **Branch Coverage:** Checks whether all possible branches (like if-else outcomes) have been executed.
+3. **Function Coverage:** Determines if every function or method has been invoked during testing.
+4. **Condition Coverage:** Verifies if all boolean expressions in the conditions have been evaluated to true and false.
+
+---
+
+### Importance of Code Coverage
+
+- Ensures critical parts of the code are tested, reducing the risk of undetected bugs.
+- Helps maintain and improve code quality over time by identifying untested areas.
+- Assists in optimizing the test suite by eliminating redundant or missing tests.
+- Supports continuous integration and deployment by validating test comprehensiveness.
+
+---
+
+### Limitations
+
+- 100% code coverage does not guarantee bug-free software; tests must be meaningful and cover edge cases.
+- Overemphasis on coverage metrics can lead to superficial tests focusing on quantity rather than quality
+
+## Developer’s Manual
+
+### Definition
+
+A **Developer’s Manual** (also called Software Developer’s Manual) is a comprehensive guide or document created to assist software developers in understanding, using, modifying, and maintaining a software system. It typically contains detailed technical information about the architecture, design, interfaces, coding standards, APIs, and other development-related details.
+
+This manual serves as a reference throughout the software development lifecycle, enabling developers to write efficient code, integrate components, and troubleshoot problems effectively.
+
+---
+
+### Overview of a Sample Developer’s Manual
+
+A typical Developer’s Manual includes:
+
+- **Introduction and Scope:** Describes the purpose, audience, and scope of the manual.
+- **System Architecture:** High-level overview of the software architecture, modules, and dependencies.
+- **Development Environment Setup:** Instructions on tools, IDEs, libraries, and configurations required to start development.
+- **Coding Standards and Guidelines:** Rules and best practices for writing code to ensure consistency and maintainability.
+- **API Documentation:** Details about available APIs, endpoints, methods, parameters, and expected responses.
+- **Module Descriptions:** Explanation of each software component/module, including responsibilities and interactions.
+- **Build and Deployment Procedures:** How to compile, build, and deploy the application.
+- **Testing Guidelines:** Information about unit testing, integration testing, and other test practices.
+- **Troubleshooting and Debugging Tips:** Common issues and debugging advice.
+- **Version Control Practices:** Guidelines on using version control systems during development.
+- **Glossary and References:** Definitions of key terms and links to related documents.
+
+---
+
+### Purpose and Benefits
+
+- Helps onboard new developers quickly by providing essential system knowledge.
+- Ensures consistent development practices and code quality.
+- Facilitates easier maintenance and extension of software.
+- Reduces dependency on oral communication or tribal knowledge.
+- Serves as a communication bridge between development, testing, and operations teams.
+
+## Synchronous and Asynchronous Code
+
+### Synchronous Code
+
+- **Definition:** Executes tasks sequentially, one after another. Each operation must complete before the next begins.
+- **Blocking Behavior:** Waits (blocks) for a task to finish before continuing with the next task.
+- **Characteristics:**
+    - Easier to write, understand, and debug due to linear execution flow.
+    - Predictable and orderly execution.
+    - Slower for I/O or network operations because it waits for resources to be free.
+- **Use Cases:** Suitable for CPU-bound or dependent tasks requiring strict order.
+
+### Asynchronous Code
+
+- **Definition:** Allows tasks to run concurrently or independently without waiting for previous tasks to complete.
+- **Non-Blocking Behavior:** Starts a task and continues to run other tasks, handling responses or results later via callbacks, promises, or async/await.
+- **Characteristics:**
+    - Improves responsiveness and throughput, especially for I/O-heavy or network operations.
+    - More complex to write and debug due to concurrent task execution and callbacks.
+    - Enables better scalability and user experience in applications.
+- **Use Cases:** Ideal for handling network requests, file operations, user interface responsiveness, and long-running processes.
+
+---
+
+### Summary Table
+
+| **Aspect** | **Synchronous** | **Asynchronous** |
+| --- | --- | --- |
+| Execution | Sequential, one task at a time | Concurrent, multiple tasks simultaneously |
+| Blocking | Yes, waits for each task to finish | No, tasks run without waiting |
+| Complexity | Easier to write and debug | More complex coding and debugging |
+| Performance | Slower for I/O or network operations | Faster, better resource utilization |
+| Use Cases | Simple workflows, CPU-bound tasks | I/O-heavy tasks, network calls, UI updates |
+
+# Section 10
+
+## Testing Phase
+
+### Definition
+
+The **Testing Phase** in the Software Development Life Cycle (SDLC) is a critical stage where the developed software is rigorously evaluated to identify defects, verify functionality against requirements, and ensure it meets quality standards before deployment.
+
+---
+
+### Key Activities in the Testing Phase
+
+1. **Test Planning**
+    - Developing a comprehensive plan detailing the scope, objectives, schedule, and resources for testing.
+2. **Test Case Development**
+    - Creating detailed test cases, scenarios, and test data based on requirements to cover functionality and edge cases.
+3. **Test Environment Setup**
+    - Preparing the hardware, software, and network configurations to mimic real-world conditions for accurate testing.
+4. **Test Execution**
+    - Running tests including unit, integration, system, and acceptance testing to validate software behavior.
+    - Logging defects and issues discovered during testing for correction.
+5. **Defect Tracking and Retesting**
+    - Managing defects by prioritizing, fixing, and retesting them to ensure resolution.
+6. **Test Reporting**
+    - Documenting test results, coverage, defects, and overall software quality for stakeholders.
+7. **Test Closure**
+    - Finalizing testing activities, analyzing lessons learned, and closing testing documentation.
+
+## Who Are Part of this Testing Team?
+
+### Key Roles in a Testing Team
+
+1. **Test Manager**
+    - Oversees the entire testing process, including planning, resource allocation, risk management, and communication with stakeholders.
+    - Ensures adherence to testing standards and project goals.
+2. **Test Lead**
+    - Manages day-to-day testing activities, assigns tasks, monitors progress, and ensures test strategy execution.
+    - Acts as a liaison between testers and management.
+3. **Test Engineer / Software Tester**
+    - Designs and executes test cases, identifies defects, conducts various types of testing (functional, regression, performance), and collaborates with developers for issue resolution.
+    - Can specialize as manual testers, automation testers, performance testers, security testers, or usability testers.
+4. **Test Automation Engineer**
+    - Develops, runs, and maintains automated test scripts and frameworks to improve test efficiency and coverage.
+5. **Test Analyst**
+    - Reviews requirements and design documents to develop comprehensive testing strategies and detailed test plans.
+    - Assists in developing test cases and scenarios aligned with business needs.
+6. **Test Architect**
+    - Designs test strategies and automation frameworks, selects appropriate tools, and guides technical aspects of testing.
+7. **Business Analyst (BA)**
+    - Analyzes requirements and supports test design and validation ensuring that business needs are met.
+8. **Product Owner**
+    - Defines product backlog, clarifies requirements, performs acceptance testing, and ensures overall product quality from a business viewpoint.
+9. **Developer**
+    - Often responsible for unit testing and assisting with integration tests to catch defects early.
+10. **Customer / End User**
+    - Participates in User Acceptance Testing (UAT) and provides feedback on usability and functionality
+
+## Challenges
+
+1. **Incomplete or Ambiguous Requirements**
+    - Poor or unclear requirements lead to incomplete test coverage and missed defects.
+2. **Time Constraints**
+    - Tight project deadlines can force shortened testing cycles, leading to insufficient testing and undetected bugs.
+3. **Lack of Skilled Testers**
+    - Insufficient knowledge or experience among testers can reduce the effectiveness of tests and defect detection.
+4. **Test Environment Issues**
+    - Inadequate or unstable test environments can cause inconsistent results or prevent effective testing.
+5. **Integration Complexities**
+    - Testing integrated components or systems is complex, with dependencies causing unpredictable behaviors.
+6. **Managing Test Data**
+    - Creating and maintaining realistic test data while respecting privacy or compliance rules is challenging.
+7. **Regression Testing Overhead**
+    - Repeating tests to verify bug fixes or new features can be time-consuming without automation.
+8. **Tool and Automation Gaps**
+    - Lack of or poorly implemented test automation tools slows down testing, increases manual effort, and may reduce coverage.
+9. **Communication Gaps**
+    - Misalignment between developers and testers leads to delays and misunderstanding of defects or requirements
+
+### Testing Levels in Software Testing
+
+Testing levels refer to the distinct phases or stages during which software is tested in the development lifecycle. Each level focuses on a specific scope and aims to identify different types of defects.
+
+---
+
+### Common Testing Levels
+
+1. **Unit Testing**
+    - Focus: Individual components or units of code (functions, methods, classes).
+    - Purpose: Verify each unit works correctly in isolation.
+    - Who Performs: Typically done by developers.
+    - Benefits: Early bug detection, easier debugging, code quality assurance.
+2. **Integration Testing**
+    - Focus: Interaction between combined modules or components.
+    - Purpose: Identify issues in interfaces and data flow between integrated units.
+    - Who Performs: Testers or developers.
+    - Types: Top-down, bottom-up, big bang, incremental integration testing.
+3. **System Testing**
+    - Focus: Entire integrated system as a whole.
+    - Purpose: Validate system’s compliance with specified requirements and overall behavior.
+    - Includes functional, performance, security, and usability testing.
+    - Who Performs: Testing team.
+4. **Acceptance Testing**
+    - Focus: System readiness for delivery.
+    - Purpose: Confirm software meets business requirements and is acceptable to users/customers.
+    - Types: User Acceptance Testing (UAT), operational acceptance testing.
+    - Who Performs: End-users, clients, or QA team.
+
+## Types of testing
+
+### 1.Functional Testing
+
+### Definition
+
+Functional testing is a type of software testing that verifies whether each function of a software application works according to the specified requirements and business logic. It focuses on testing the system from the user's perspective by providing inputs and validating the outputs to ensure the application behaves as expected.
+
+---
+
+### Key Points About Functional Testing
+
+- It tests individual features, integrated modules, and complete workflows based on requirements.
+- Typically performed using **black-box testing**, meaning testers validate functionality without knowledge of the internal code structure.
+- Can be performed manually or automated depending on project needs.
+- Includes testing user interfaces, APIs, databases, security, and server/client interaction.
+- Validates primary user functions, error messages, GUI workflows, input validation, and session management
+
+### How Functional Testing is Carried Out
+
+- Understand requirements and break them down into detailed test cases.
+- Design input scenarios and predict expected outputs.
+- Execute test cases manually or automated and compare actual vs. expected results.
+- Report defects and retest until issues are resolved.
+
+### 2.Load Testing
+
+### Definition
+
+Load testing is a type of **performance testing** that simulates real-world conditions to evaluate how a software system behaves under expected and peak concurrent user loads. It measures system responsiveness, stability, throughput, and resource usage when subjected to varying load levels.
+
+---
+
+### Purpose of Load Testing
+
+- Assess system performance under normal and heavy user traffic.
+- Identify bottlenecks, weak points, and maximum capacity limits.
+- Ensure the system can handle anticipated user demand without crashes or unacceptable slowdown.
+- Support planning for capacity upgrades and infrastructure scaling.
+
+---
+
+### Load Testing Process
+
+1. **Test Environment Setup:** Create a testing environment resembling production to obtain realistic results.
+2. **Load Test Scenario Creation:** Define typical user behaviors, concurrent users, and transaction volumes to simulate.
+3. **Test Execution:** Run load simulations using testing tools.
+4. **Monitoring & Data Collection:** Track CPU, memory, network, response times, and throughput metrics during test.
+5. **Result Analysis:** Analyze performance data to find bottlenecks and failures.
+6. **Optimization and Retesting:** Make improvements and rerun tests to validate fixes.
+
+### 3.Performance Testing
+
+### Definition
+
+Performance testing is a type of non-functional software testing that evaluates how a system behaves under specific workloads, measuring parameters like speed, responsiveness, scalability, and stability to ensure optimal user experience and robust operation under expected or extreme conditions.
+
+---
+
+### Purpose
+
+- Identify bottlenecks and performance issues before deployment.
+- Validate that the application meets performance requirements under various load conditions.
+- Ensure system reliability, scalability, and speed with real-world user simulations.
+
+### **How Performance Testing Is Measured**
+
+1. **Response Time**
+    - The time it takes for the system to respond to a user request or transaction.
+    - Includes server processing time and network latency.
+2. **Throughput**
+    - The number of transactions or requests processed by the system per second or minute.
+    - High throughput indicates good system capacity.
+3. **Latency**
+    - The delay between sending a request and receiving a response, often measured in milliseconds.
+    - Important for real-time applications where quick feedback is critical.
+4. **Resource Utilization**
+    - Monitoring CPU, memory, disk I/O, and network bandwidth usage during the test.
+    - Helps identify bottlenecks or resource constraints impacting performance.
+5. **Error Rate**
+    - Percentage of failed or erroneous requests during testing.
+    - Ideally should be zero or minimal under expected loads.
+6. **Concurrent Users**
+    - Number of users or sessions simultaneously interacting with the system during the test.
+7. **Transactions Per Second (TPS)**
+    - Number of completed transactions processed per second, a measure of system capacity.
+8. **Peak Load Capacity**
+    - Maximum load the system can handle before performance degrades or failures occur.
+
+### 4.Security Testing
+
+### Definition
+
+**Security testing** is a type of software testing that aims to identify vulnerabilities, threats, and risks in a software application to prevent malicious attacks, data breaches, and unauthorized access. It ensures the software protects data and maintains functionality as intended under potential security threats.
+
+---
+
+### Key Objectives of Security Testing
+
+- Identify security vulnerabilities and weaknesses.
+- Ensure data confidentiality, integrity, and availability.
+- Verify authentication and authorization mechanisms.
+- Check for compliance with security standards and regulations.
+- Validate secure data transmission and storage.
+
+---
+
+### Security Testing Process
+
+1. **Requirement Analysis**
+    - Understand security requirements, standards, and compliance needs.
+    - Identify critical assets and potential threats.
+2. **Planning and Design**
+    - Develop a security test plan and define scope.
+    - Identify tools, techniques, and resources needed.
+3. **Test Case Development**
+    - Create test cases and scenarios covering authentication, authorization, encryption, data validation, and error handling.
+4. **Environment Setup**
+    - Prepare a secure and isolated test environment simulating production settings.
+5. **Test Execution**
+    - Perform various security tests like vulnerability scanning, penetration testing, risk assessment, and ethical hacking.
+6. **Monitoring and Documentation**
+    - Document identified vulnerabilities, attack vectors, and system behaviors under test.
+    - Track security incidents and test results.
+7. **Analysis and Reporting**
+    - Analyze findings to assess severity and impact.
+    - Provide recommendations for mitigation and remediation.
+8. **Retesting and Validation**
+    - Verify fixes and patches applied for vulnerabilities.
+    - Conduct regression security testing to prevent reintroduction of flaws.
+
+---
+
+### Common Security Testing Types
+
+- **Vulnerability Scanning**
+- **Penetration Testing**
+- **Risk Assessment**
+- **Security Auditing**
+- **Ethical Hacking**
+- **Authentication Testing**
+- **Authorization Testing**
+- **Session Management Testing**
+- **Input Validation Testing**
+
+### 5.Integration Testing
+
+### Definition
+
+Integration testing is a software testing technique where individual software modules or components are combined and tested as a group to verify their interactions and data flow work correctly. It ensures that different parts of the system collaborate as expected and uncovers interface defects between integrated units.
+
+---
+
+### Purpose of Integration Testing
+
+- Verify that integrated components communicate and function properly together.
+- Detect interface mismatches, data format issues, and API errors.
+- Identify defects arising from module interactions not found during unit testing.
+- Enhance system reliability by validating overall integration quality.
+
+---
+
+### Integration Testing Process
+
+1. **Planning and Design**
+    - Define the scope, objectives, integration points, and test strategy.
+2. **Test Case Development**
+    - Create test cases targeting interactions, data exchange, error handling, and communication between modules.
+3. **Environment Setup**
+    - Prepare a test environment that replicates production conditions.
+4. **Test Execution**
+    - Execute test cases manually or via automation tools like Selenium, JUnit, Mockito.
+5. **Defect Reporting and Tracking**
+    - Identify, report, and collaborate on fixing interface defects found.
+6. **Retesting and Regression Testing**
+    - Verify fixes and ensure no new integration issues are introduced.
+
+---
+
+### Types of Integration Testing
+
+- **Big Bang Integration:** Integrate all modules simultaneously and test as a whole.
+- **Incremental Integration:** Gradually integrate modules and test step-by-step.
+    - Top-down
+    - Bottom-up
+
+### 6.Usability Testing
+
+### Definition
+
+Usability testing is a **non-functional testing method** that evaluates a software product by observing real users as they interact with it to complete specific tasks. The goal is to assess how easily, efficiently, and satisfactorily users can achieve their objectives using the software.
+
+---
+
+### Purpose of Usability Testing
+
+- Identify obstacles or confusion points in the user interface and workflows.
+- Measure user satisfaction, effectiveness, and efficiency in using the product.
+- Uncover design flaws and areas needing improvement to enhance overall user experience.
+- Ensure the product meets target audience needs and expectations before release.
+
+---
+
+### How Usability Testing is Conducted
+
+- Select representative users typically from the target audience.
+- Define realistic tasks and scenarios for users to complete on the software.
+- Observe users either in-person or remotely as they perform these tasks without assistance.
+- Collect qualitative and quantitative data on users' behavior, errors, and feedback.
+- Analyze results to identify pain points and usability issues.
+- Recommend changes to improve navigation, layout, terminology, and interaction
+
+### 7.Compatibility Testing
+
+### Definition
+
+Compatibility testing is a type of **non-functional testing** conducted to ensure that a software application performs correctly and consistently across various environments, including different hardware configurations, operating systems, browsers, devices, and network platforms.
+
+---
+
+### Purpose of Compatibility Testing
+
+- Verify that the application functions properly on different operating systems (Windows, Linux, MacOS), browsers (Chrome, Firefox, Safari, etc.), and hardware devices.
+- Ensure backward compatibility with older versions of software or hardware and forward compatibility with newer versions.
+- Validate interoperability with other software, hardware peripherals, databases, and network configurations.
+- Prevent user experience issues caused by environmental differences.
+
+---
+
+### Types of Compatibility Testing
+
+1. **Software Compatibility Testing:** Checks compatibility across OS, browsers, databases, software dependencies.
+2. **Hardware Compatibility Testing:** Tests on different devices, RAM, processors, graphic cards, and storage.
+3. **Backwards Compatibility Testing:** Ensures the latest software version works with older devices or software.
+4. **Forward Compatibility Testing:** Ensures the current version runs on future hardware/software versions.
+5. **Network Compatibility Testing:** Tests operation under various network conditions and bandwidths.
+6. **Mobile Compatibility Testing:** Verifies function on multiple mobile devices and OS versions
+
+### 8.Regression Testing
+
+### Definition
+
+Regression testing is the process of re-executing previously developed and executed test cases to verify that recent changes, such as bug fixes, enhancements, or code modifications, have not adversely affected the existing functionality of a software application.
+
+---
+
+### Purpose
+
+- Ensure that new code changes do not introduce new bugs or break existing features.
+- Validate that the software remains stable and reliable after updates.
+- Maintain overall software quality during the development lifecycle.
+
+---
+
+### When to Perform Regression Testing
+
+- After fixing defects.
+- When new features or enhancements are added.
+- Following performance improvements or code optimizations.
+- During continuous integration and deployment cycles to catch unforeseen issues early.
+
+---
+
+### Regression Testing Process
+
+1. **Identify Code Changes:** Analyze what parts of the software have been modified.
+2. **Select Test Cases:** Choose relevant test cases covering affected and related areas; add new cases if needed.
+3. **Execute Tests:** Perform manual or automated test execution of selected cases.
+4. **Analyze Results:** Review test outcomes to detect failures or regressions.
+5. **Report Defects:** Document any issues found and communicate to the development team.
+6. **Retest After Fixes:** Verify that issues have been resolved and no new problems have been introduced.
+
+### 9.Sanity Testing
+
+### Definition
+
+Sanity testing is a type of software testing performed on a stable build to quickly verify that specific functionalities or bug fixes work correctly and that no new defects are introduced due to recent changes. It is a narrow, focused check conducted after smoke testing, often used to determine if further, more detailed testing can proceed.
+
+---
+
+### Purpose
+
+- Verify that recent code changes or bug fixes do not break existing functions.
+- Provide quick feedback on software stability without exhaustive testing.
+- Save time and resources by identifying major issues early in the testing cycle.
+
+---
+
+### When to Perform
+
+- After receiving a new build that includes minor updates or bug fixes.
+- Following smoke testing and before proceeding with full regression testing.
+- Before deploying software to production in some workflows
+
+### 10.Accessibility Testing
+
+### Definition
+
+Accessibility testing is a type of software testing that ensures web and mobile applications are usable by people with disabilities, including visual, auditory, motor, and cognitive impairments. Its goal is to create an inclusive digital experience by removing barriers that prevent individuals with disabilities from accessing or interacting effectively with the software.
+
+---
+
+### Purpose of Accessibility Testing
+
+- Verify compliance with accessibility standards such as WCAG (Web Content Accessibility Guidelines).
+- Ensure digital content is navigable and usable via assistive technologies like screen readers, keyboard navigation, and speech recognition.
+- Enhance usability for all users, not just those with disabilities.
+- Support legal compliance with accessibility laws and regulations.
+
+---
+
+### How Accessibility Testing is Conducted
+
+- **Manual Testing:** Testers use assistive tech (e.g., screen readers), evaluate keyboard navigation, and manually check color contrast and readability.
+- **Automated Testing:** Tools scan applications to detect common accessibility violations quickly (e.g., missing alt text, ARIA roles).
+- **User Testing:** Inclusion of users with disabilities to provide real feedback on usability.
+
+---
+
+### Common Accessibility Issues Tested
+
+- Missing or incorrect alternative text for images.
+- Inadequate color contrast ratios affecting readability.
+- Improper use of ARIA attributes for screen readers.
+- Keyboard accessibility problems (navigation, focus management).
+- Multimedia captioning and transcript availability.
+- Logical and clear content structure.
+
+### 11.Unit Testing
+
+### Definition
+
+Unit testing is the process of testing the smallest parts or units of code, such as functions, methods, or classes, in isolation to verify that they work correctly as intended. It helps detect bugs early in development by ensuring each component behaves as expected before being integrated into the larger system.
+
+---
+
+### Purpose and Importance
+
+- Detect defects early in the development cycle, reducing cost and effort for fixes.
+- Improve code quality by encouraging modular programming and clear separation of concerns.
+- Facilitate easier maintenance and refactoring with confidence due to safety nets of tests.
+- Act as documentation of expected behavior for individual units.
+- Support faster development cycles and continuous integration by automated testing.
+
+---
+
+### How Unit Testing Works
+
+- Developers write test cases for each unit, specifying inputs and expected outputs.
+- Tests run independently, often using mock objects or stubs to isolate the unit from dependencies like databases or services.
+- Automated frameworks run these tests frequently, providing quick feedback on code changes.
+
+### 12.System Testing
+
+### Definition
+
+System testing is a type of software testing performed on a fully integrated system to evaluate its compliance with specified requirements. It verifies the complete and fully integrated software product to ensure it functions correctly and meets both functional and non-functional requirements.
+
+---
+
+### Purpose
+
+- Validate that the entire system works as intended in a production-like environment.
+- Identify any defects or issues in the integrated system before release to end users.
+- Ensure the software meets business requirements and user expectations.
+- Test both functional features and non-functional aspects such as performance, security, usability, and compatibility.
+
+---
+
+### When System Testing is Performed
+
+- After successful integration testing and before user acceptance testing (UAT).
+- On a complete product build that includes all integrated modules.
+
+### 13.User Acceptance Testing (UAT)
+
+### Definition
+
+User Acceptance Testing (UAT) is the **final phase** of software testing where the actual end users or clients test the software in real-world or simulated conditions to verify that it meets their business requirements and is ready for deployment. UAT validates the software’s functionality, usability, and performance from the user’s perspective.
+
+---
+
+### Purpose of UAT
+
+- Confirm the software satisfies user needs and business processes.
+- Identify and fix any defects or issues before the software goes live.
+- Ensure the software is user-friendly, functional, and reliable in real-world scenarios.
+- Provide confidence to stakeholders that the system is ready for production.
+
+---
+
+### When UAT is Performed
+
+- After completion of system, integration, and regression testing.
+- When the software build is feature-complete and stable.
+- Before official release or deployment.
+
+---
+
+### Who Performs UAT
+
+- Actual end users or customers who will operate the software.
+- Business analysts and product owners to validate business requirements.
+- Sometimes beta testers or external stakeholders.
+
+---
+
+### UAT Process
+
+1. **Planning:** Define acceptance criteria, scope, users involved, and test environment.
+2. **Designing Test Cases:** Based on real-world business scenarios and requirements.
+3. **Execution:** Users perform tests, record results, and report defects or issues.
+4. **Defect Management:** Developers fix defects and testers revalidate fixes.
+5. **Sign-off:** Upon successful testing, users approve the software for production.
+
+### 14.Non-Functional Testing
+
+### Definition
+
+Non-functional testing is a type of software testing that verifies **non-functional requirements** of a software application. It focuses on how well the system performs rather than its specific behaviors or functions. This includes attributes such as performance, usability, reliability, scalability, security, and compatibility.
+
+---
+
+### Purpose
+
+- Ensure the software operates efficiently under various conditions.
+- Validate quality aspects such as speed, stability, security, and accessibility.
+- Enhance user experience by assessing usability and responsiveness.
+- Reduce risks and costs by identifying performance, security, and compatibility issues early.
+
+---
+
+### Key Characteristics and Focus Areas
+
+- **Performance Testing:** Evaluates system responsiveness and stability under load.
+- **Security Testing:** Checks for vulnerabilities and protects against threats.
+- **Usability Testing:** Assesses user-friendliness and interface navigation.
+- **Compatibility Testing:** Verifies operation across different browsers, OS, devices.
+- **Reliability Testing:** Tests if the system works consistently over time.
+- **Scalability Testing:** Measures ability to handle growth in users or data.
+- **Recovery Testing:** Tests system recovery from crashes or failures.
+
+### 15.Quality Assurance Testing
+
+### Definition
+
+Quality Assurance (QA) testing is the systematic process of ensuring that software products meet specified quality standards and user expectations throughout the software development lifecycle. It focuses on monitoring and improving development processes to produce a defect-free, reliable, and functional software product.
+
+---
+
+### Purpose
+
+- Ensure software compliance with defined requirements, standards, and regulations.
+- Prevent defects through well-defined processes rather than just finding defects after development.
+- Improve software reliability, usability, security, and performance.
+- Enhance customer satisfaction and reduce maintenance costs.
+
+---
+
+### Key Characteristics
+
+- QA is **process-oriented**; it designs and implements quality processes, guidelines, and audits.
+- It involves activities like requirements analysis, design reviews, code inspections, testing strategy planning, and test execution.
+- QA encompasses multiple types of testing, including functional, regression, performance, security, usability, and others.
+- It is proactive, focusing on preventing issues during development rather than reactive defect detection.
+
+### 16.API Testing
+
+### Definition
+
+API testing is a type of software testing that focuses on verifying the functionality, reliability, performance, and security of Application Programming Interfaces (APIs). APIs act as bridges between different software systems, enabling communication and data exchange without involving the user interface.
+
+---
+
+### Importance of API Testing
+
+- Ensures different components of a system communicate correctly.
+- Verifies that the API returns correct responses for various input cases.
+- Tests error handling, security vulnerabilities, and performance under load.
+- Critical for continuous integration and agile development due to frequent API changes.
+
+---
+
+### What API Testing Involves
+
+- Functional testing of API methods to ensure expected outputs.
+- Validation of response data format, status codes, and error messages.
+- Security testing to detect vulnerabilities and unauthorized access.
+- Performance testing under normal and peak loads.
+- Compatibility and interoperability testing with different systems and platforms.
+
+---
+
+### How API Testing is Performed
+
+- Automated tools or scripts send requests to API endpoints with various inputs.
+- Responses are validated against expected outputs and behaviors.
+- Tests can be integrated into development pipelines for early detection of defects.
+- Common tools include Postman, SoapUI, JMeter, RestAssured, and others.
+
+### 17.A/B Testing
+
+### Definition
+
+A/B testing, also known as split testing or bucket testing, is an experimental method used to compare two versions (A and B) of a webpage, app, software, or marketing content to determine which version performs better in terms of user engagement, conversion rate, or other key performance indicators (KPIs).
+
+---
+
+### How A/B Testing Works
+
+- Two different versions (original/control A and variation B) of a page or element are created.
+- The audience is randomly split into groups where some users see version A and others see version B.
+- User behavior and interaction with each version are tracked and measured (e.g., clicks, conversions, sign-ups).
+- Statistical analysis is used to determine which version yields better outcomes.
+
+---
+
+### Purpose and Benefits
+
+- Provides data-driven insights to optimize user experience and increase conversion rates.
+- Eliminates guesswork by validating hypotheses with real user feedback.
+- Allows testing minor or major changes such as button colors, headlines, layouts, or complete redesigns.
+- Supports continuous improvement by iteratively refining designs based on results
+
+### 18.Globalization Testing
+
+### Definition
+
+Globalization testing is a software testing process that ensures an application functions correctly across various geographical and cultural environments. It verifies that the software can be used globally, supporting multiple languages, international input formats, and cultural preferences without breaking its functionality.
+
+---
+
+### Purpose
+
+- Ensure the application supports multiple languages and regional settings like date/time, currency, and address formats.
+- Validate the software provides a customized and culturally appropriate user experience worldwide.
+- Detect potential problems related to internationalization and localization early to reduce post-release fixes.
+- Confirm that the codebase can handle international support without requiring changes.
+
+---
+
+### Types of Globalization Testing
+
+1. **Internationalization Testing (I18N):**
+    - Ensures the software design supports easy localization for any language or region without source code changes.
+    - Tests language compatibility, UI adaptability, and platform interoperability.
+2. **Localization Testing (L10N):**
+    - Verifies the product’s correctness and cultural appropriateness for a specific locale (language, symbols, legal requirements).
+    - Includes translation accuracy, formatting, graphics, and documentation localized for target regions.
+
+### 18.Compliance Testing
+
+### Definition
+
+Compliance testing, also known as conformance testing, is a type of software testing that verifies whether a software product, system, or process adheres to specific standards, regulations, legal requirements, or internal policies. It ensures that the software meets industry, governmental, or organizational compliance mandates to avoid legal penalties, ensure data protection, and maintain operational standards.
+
+---
+
+### Types of Compliance Testing
+
+1. **Regulatory Compliance Testing**
+    - Ensures software adheres to laws and regulations such as GDPR (data privacy), HIPAA (healthcare), PCI DSS (payment security), SOX (financial reporting), and others.
+2. **Security Compliance Testing**
+    - Validates protection mechanisms meet standards like ISO/IEC 27001, SOC 2, NIST guidelines to secure systems and data.
+3. **Accessibility Compliance Testing**
+    - Checks software meets accessibility standards like WCAG and Section 508 to accommodate users with disabilities.
+4. **Data Privacy Testing**
+    - Confirms proper handling, storage, and processing of personal data per regulations such as GDPR and CCPA.
+5. **Performance Compliance Testing**
+    - Verifies that the system performs reliably under specified operational loads.
+6. **Internal Policy Testing**
+    - Ensures adherence to organizational policies including coding standards, ethical data handling, and proprietary protocols.
+7. **Environmental Compliance Testing**
+    - Confirms compliance with environmental standards such as energy efficiency and waste management.
+8. **Process Compliance Testing**
+    - Checks alignment with development methodologies and quality management systems like Agile, DevOps, and ISO 9001
+
+### 19.Exploratory Testing
+
+### Definition
+
+Exploratory testing is an approach to software testing where testers actively explore the application to simultaneously learn, design, and execute tests. Unlike scripted testing, it does not rely on pre-written test cases but emphasizes the tester’s creativity, intuition, and experience to uncover defects and improve software quality.
+
+---
+
+### Key Characteristics
+
+- **Simultaneous Learning and Testing:** Testers learn about the software and generate test ideas on the fly during testing.
+- **Unscripted and Adaptive:** Tests are not pre-planned; testers explore the product based on observations and findings.
+- **Black Box Approach:** Focuses on testing the software from an end user’s perspective without knowledge of internal code.
+- **Highly Interactive:** Encourages critical thinking and learning, enabling discovery of hidden issues and edge cases
+
+### 20.Automation Testing
+
+### Definition
+
+Automation testing is the process of using specialized software tools or scripts to automatically execute predefined test cases on a software application. It reduces or eliminates the manual effort required in testing, enabling faster, consistent, and repeatable validation of software functionality, performance, security, and other quality attributes.
+
+### Benefits of Automation Testing
+
+- Speeds up the execution of repetitive and large test suites.
+- Provides consistent and reliable test results free from human error.
+- Supports continuous integration/continuous deployment (CI/CD) pipelines by enabling quick feedback.
+- Improves test coverage and detects regressions early
+
+# Section 11
+
+## Deployment Phase
+
+### Definition
+
+The deployment phase is the final stage in the Software Development Life Cycle (SDLC) during which the developed software is released and made available to end users or customers. It involves moving the software from the development/testing environment to the live production environment and ensuring that it is fully operational.
+
+---
+
+### Key Activities in Deployment Phase
+
+- Finalizing and packaging the software for release.
+- Configuring production environments, including servers, databases, and networks.
+- Installing and deploying the software on target devices or hosting platforms.
+- Migrating existing data to the new system with data validation to ensure integrity.
+- Conducting post-deployment testing to verify functionality and performance in the live environment.
+- Monitoring system performance and resolving operational issues post-deployment.
+- Training end users and providing support as needed.
+- Documenting the deployment process and outcomes.
+
+---
+
+### Challenges in Deployment Phase
+
+1. **Environment Compatibility Issues**
+    - Differences between development/testing and production environments may cause software malfunctions.
+    - Requires careful environment configuration and testing.
+2. **Data Migration Risks**
+    - Data loss or corruption during migration can negatively impact users.
+    - Needs thorough validation and backup plans.
+3. **Downtime and Service Disruption**
+    - Deployments may cause service interruptions affecting user experience.
+    - Planning for minimal downtime, phased rollouts, or rollback procedures is essential.
+4. **Resource Constraints**
+    - Time, budget, and skilled personnel limitations can impact deployment quality and timing.
+5. **User Adaptation and Training**
+    - Lack of user training or communication can reduce adoption and cause resistance.
+6. **Security Concerns**
+    - New vulnerabilities or configuration issues can arise during deployment.
+7. **Rollback and Recovery Preparedness**
+    - Inadequate rollback strategies risk prolonged outages during failed deployments.
+
+---
+
+### Deployment Strategies
+
+- **Big Bang Deployment:** The entire software system is released at once, faster but with higher risk.
+- **Phased Deployment:** Software is gradually released in stages to mitigate risk and allow feedback incorporation.
+- **Continuous Deployment:** Automated frequent releases integrated with CI/CD pipelines for rapid delivery.
+
+## RFC Process
+
+In the context of SDLC deployment, the RFC (Request for Change) process is a formal procedure used to manage and control changes to the software or its deployment environment. It ensures that all proposed changes are documented, evaluated, approved, and implemented in a controlled manner to minimize risks and disruptions during deployment.
+
+---
+
+### RFC Process in SDLC Deployment
+
+1. **Change Request Initiation**
+    - A formal request for change is submitted detailing the proposed change (e.g., deploying a new release, configuration changes, bug fixes)[general SDLC and ITIL knowledge].
+2. **Request Review and Impact Analysis**
+    - The change advisory board (CAB) or relevant stakeholders review the RFC to assess potential impacts, risks, dependencies, and resource requirements related to deployment[general SDLC and ITIL knowledge].
+3. **Approval**
+    - The RFC is approved, deferred, or rejected based on the analysis and consensus of the CAB or decision-making authorities[general SDLC and ITIL knowledge].
+4. **Planning and Scheduling**
+    - Approved changes are planned with deployment schedules, rollback strategies, communication plans, and resource allocation[general SDLC and ITIL knowledge].
+5. **Implementation**
+    - The deployment team executes the change according to the approved plan, documenting progress and any unexpected issues[general SDLC and ITIL knowledge].
+6. **Verification and Testing**
+    - Post-deployment verification ensures the change is correctly implemented and the system is stable (e.g., post-deployment smoke tests, monitoring)[general SDLC and ITIL knowledge].
+7. **Closure**
+    - Once verified, the RFC is formally closed, and documentation is updated reflecting the deployment and outcomes[general SDLC and ITIL knowledge].
+
+---
+
+## Importance in Deployment
+
+- Provides **structured control** over deployment changes minimizing errors or downtime.
+- Ensures **communications** to stakeholders before and after deployment.
+- Facilitates **rollback** and contingency plans if deployment issues arise.
+- Enables **auditability** and compliance with organizational or regulatory standards
+
+## Post Go Live Support (PGLS) Phase
+
+### Definition
+
+The Post Go Live Support (PGLS) phase is the period after a software application or system has been deployed (gone live) in the production environment. During this phase, the support team focuses on stabilizing the system, addressing user issues, and ensuring smooth ongoing operations[general software lifecycle knowledge].
+
+---
+
+### Key Activities in PGLS Phase
+
+- **Monitoring System Performance:** Continuously track system health, performance, and security to detect anomalies or failures early.
+- **Issue and Incident Management:** Log, prioritize, and resolve user-reported problems, bugs, or system errors rapidly.
+- **User Support and Training:** Provide helpdesk services, user guidance, and additional training as needed for end-users.
+- **Change and Patch Management:** Deploy patches, hotfixes, or minor enhancements to address issues or improve the system without disrupting operations.
+- **Knowledge Transfer:** Ensure thorough documentation and smooth transition from development to support teams.
+- **Communication:** Regular updates to stakeholders about system status, known issues, and resolution timelines.
+- **Feedback Collection:** Gather user feedback for future improvements or releases.
+
+---
+
+### Importance of PGLS Phase
+
+- Ensures system reliability and user satisfaction after deployment.
+- Minimizes downtime and business disruption by addressing issues promptly.
+- Strengthens user confidence and adoption through continuous support.
+- Facilitates iterative improvements based on real-world usage and feedback.
+
+---
+
+### Challenges During PGLS
+
+- Handling unexpected bugs or performance bottlenecks.
+- Balancing support for current users with ongoing enhancements.
+- Coordinating across development, testing, and support teams effectively.
+- Managing user expectations and communication during issue resolution.
