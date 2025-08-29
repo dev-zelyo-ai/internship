@@ -54,7 +54,7 @@
 
 ### 🔹 Types of Software Development
 
-![Screenshot](image3/Screenshot_from_2025-08-22_14-14-03.png)
+![Screenshot](image3/Screenshot_from_2025-08-22_14-14-03.png){ align=center }
 
 1. **Front-End Development**
     - Focuses on the **user interface and experience** (client-side).
@@ -68,7 +68,7 @@
     - APIs act as **digital glue** that connects different software systems.
     - Two ways of use: **Architectural APIs** (REST, SOAP, GraphQL, gRPC, WebSockets) and **Programmatic APIs** (built using different programming languages).
 
-    ![Screenshot](image3/Screenshot_from_2025-08-20_12-41-53.png)
+    ![Screenshot](image3/Screenshot_from_2025-08-20_12-41-53.png){ align=center }
 
 
 4. **Data Science Development**
@@ -1342,7 +1342,7 @@ A Wireframe Diagram is a simple, skeletal visual guide that represents the lay
 - Include annotations or notes to describe functionality or behavior of elements.
 - Typically low-fidelity and quick to create for easy changes and feedback.
 
-![8.8.Resource+Wireframe+diagram.png](image3/8.8.Resource+Wireframe+diagram.png)
+![8.8.Resource+Wireframe+diagram.png](image3/8.8.Resource+Wireframe+diagram.png){ align=center }
 
 ## **High-Fidelity (Hi-Fi) and Low-Fidelity (Lo-Fi) Diagrams**
 
@@ -3810,7 +3810,7 @@ The principles of protection are foundational concepts designed to safeguard inf
 
 ## 1.Waterfall model
 
-![image.png](image3/Screenshot_from_2025-08-26_14-48-00.png)
+![image.png](image3/Screenshot_from_2025-08-26_14-48-00.png){ align=center }
 
 ### What is the Waterfall Model?
 
