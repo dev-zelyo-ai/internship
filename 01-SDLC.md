@@ -54,7 +54,10 @@
 
 ### 🔹 Types of Software Development
 
-![Screenshot](image3/Screenshot_from_2025-08-22_14-14-03.png)
+<div style="text-align: center;">
+  <img src="image3/Screenshot_from_2025-08-22_14-14-03.png" alt="Screenshot" />
+</div>
+
 1. **Front-End Development**
     - Focuses on the **user interface and experience** (client-side).
     - Should be **accessible, interactive, and efficient**, ensuring tasks can be completed quickly with minimal clicks.
@@ -67,7 +70,10 @@
     - APIs act as **digital glue** that connects different software systems.
     - Two ways of use: **Architectural APIs** (REST, SOAP, GraphQL, gRPC, WebSockets) and **Programmatic APIs** (built using different programming languages).
 
-    ![Screenshot](image3/Screenshot_from_2025-08-20_12-41-53.png)
+    <div style="text-align: center;">
+  <img src="image3/Screenshot_from_2025-08-20_12-41-53.png" alt="Screenshot" />
+</div>
+
 
 
 4. **Data Science Development**
@@ -449,7 +455,10 @@ Interaction diagrams focus on how components or objects collaborate and exchange
 
 ### Class Uml diagram
 
-![image.png](image3/Screenshot_from_2025-08-22_12-20-33.png)
+<div style="text-align: center;">
+  <img src="image3/Screenshot_from_2025-08-22_12-20-33.png" alt="image" />
+</div>
+
 
 1. **Class**
     - Represents a blueprint or template for objects (instances).
@@ -493,7 +502,10 @@ Interaction diagrams focus on how components or objects collaborate and exchange
 
 it is the snapshot taken at some instance of a time
 
-![Screenshot.png](image3/Screenshot_from_2025-08-22_2-20-46.png)
+<div style="text-align: center;">
+  <img src="image3/Screenshot_from_2025-08-22_2-20-46.png" alt="Screenshot" />
+</div>
+
 
 ### Key Characteristics of UML Object Diagrams
 
@@ -607,7 +619,10 @@ A deployment diagram for a web application might show:
 
 Composite Structure Diagram is a type of structural UML diagram that shows the internal structure of a classifier (such as a class, component, or deployment node) and the interactions between its parts at runtime
 
-![image.png](image3/Screenshot_from_2025-08-22_12-40-51.png)
+<div style="text-align: center;">
+  <img src="image3/Screenshot_from_2025-08-22_12-40-51.png" alt="image" />
+</div>
+
 
 ### Key Components of a Composite Structure Diagram
 
@@ -683,7 +698,10 @@ Suppose you are modeling a network system and want to represent network-specific
 - Add tagged values such as **`manufacturer`** or **`IP address`** to these stereotypes.
 - Use these stereotypes in your model to clearly indicate network components with domain-specific semantics.
 
-![image.png](image3/Screenshot_from_2025-08-22_12-48-44.png)
+<div style="text-align: center;">
+  <img src="image3/Screenshot_from_2025-08-22_12-48-44.png" alt="image" />
+</div>
+
 
 ## Use case uml Diagram
 
@@ -1333,7 +1351,6 @@ UI (User Interface) and UX (User Experience) are closely related but distinct
 A Wireframe Diagram is a simple, skeletal visual guide that represents the layout and structure of a user interface (UI) for a website, software application, or mobile app. It outlines the placement and arrangement of elements like headers, buttons, images, content areas, and navigation without focusing on color, graphics, or detailed design.
 
 ---
-
 ### Characteristics of Wireframe Diagrams
 
 - Use basic shapes (boxes, lines, placeholders) to indicate UI components.
@@ -1341,7 +1358,10 @@ A Wireframe Diagram is a simple, skeletal visual guide that represents the lay
 - Include annotations or notes to describe functionality or behavior of elements.
 - Typically low-fidelity and quick to create for easy changes and feedback.
 
-![8.8.Resource+Wireframe+diagram.png](image3/8.8.Resource+Wireframe+diagram.png)
+<div style="text-align: center;">
+  <img src="image3/Screenshot-from-2025-08-26_16-15-00.png" alt="image" />
+</div>
+
 ## **High-Fidelity (Hi-Fi) and Low-Fidelity (Lo-Fi) Diagrams**
 
 High-Fidelity (Hi-Fi) and Low-Fidelity (Lo-Fi) Diagrams are terms used in design and prototyping to describe different levels of detail and realism in visual representations of user interfaces or systems.
@@ -4028,7 +4048,10 @@ The V-Model, also known as the Verification and Validation Model, is a software 
 
 ## 5.Spiral Model
 
-![image.png](image3/Screenshot-from-2025-08-26_16-15-00.png)
+<div style="text-align: center;">
+  <img src="image3/Screenshot-from-2025-08-26_16-15-00.png" alt="image" />
+</div>
+
 
 ### What is the Spiral Model?
 
@@ -4771,3 +4794,12 @@ The SCRUM process is structured around regular, repeatable cycles called sprints
 - Enhances stakeholder engagement and transparency.
 - Enables synchronized delivery aligned with customer needs.
 - Supports large organizations in delivering business value effectively at scale.
+
+
+# Conclusion
+
+The Software Development Life Cycle (SDLC) provides a structured approach to building software that is efficient, reliable, and aligned with user needs. By breaking development into phases—planning, analysis, design, implementation, testing, deployment, and maintenance—it ensures clarity, reduces risks, and improves overall quality.  
+
+Different models, such as Waterfall, Agile, Spiral, and V-Model, make SDLC adaptable to various project types. Traditional methods emphasize step-by-step progress and documentation, while modern approaches like Agile and DevOps focus on flexibility, collaboration, and continuous improvement. This adaptability keeps SDLC relevant in today’s fast-paced technological world.  
+
+Overall, SDLC is not just a process but a framework that guides teams to deliver scalable and customer-focused solutions. It enhances communication among stakeholders, ensures efficient use of resources, and minimizes costly errors. Mastering SDLC principles equips professionals to transform ideas into practical software solutions that support innovation and long-term success.  
