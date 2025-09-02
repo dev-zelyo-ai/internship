@@ -10,7 +10,7 @@
 - The role involves a **systematic approach** that includes development, operations, and continuous maintenance.
 - Key methodologies and practices such as **Agile, Waterfall, DevOps, Scrum, Software Design, Programming, Testing, Product Management, and Version Control** are all interconnected to make the software development process effective.
 
-![Screenshot](image3/Screenshot_from_2025-08-20_12-12-49.png)
+![Screenshot](01-SDLC_images/Software_Engineering.png)
 
 ---
 
@@ -25,7 +25,7 @@
     - Deploying it for users
     - Maintaining and upgrading the system
 
-![Screenshot](image3/Screenshot_from_2025-08-22_12-14-28.png)
+![Screenshot](01-SDLC_images/Software_development_phase.png)
 
 ---
 
@@ -54,9 +54,9 @@
 
 ### 🔹 Types of Software Development
 
-<div style="text-align: center;">
-  <img src="image3/Screenshot_from_2025-08-22_14-14-03.png" alt="Screenshot" />
-</div>
+<p align="center">
+  <img src="01-SDLC_images/Types_of_development.png" alt="Screenshot" />
+</p>
 
 1. **Front-End Development**
     - Focuses on the **user interface and experience** (client-side).
@@ -70,9 +70,10 @@
     - APIs act as **digital glue** that connects different software systems.
     - Two ways of use: **Architectural APIs** (REST, SOAP, GraphQL, gRPC, WebSockets) and **Programmatic APIs** (built using different programming languages).
 
-    <div style="text-align: center;">
-  <img src="image3/Screenshot_from_2025-08-20_12-41-53.png" alt="Screenshot" />
-</div>
+    <p align="center">
+  <img src="01-SDLC_images/API_working_Example.png" alt="Screenshot" />
+</p>
+
 
 
 
@@ -312,13 +313,13 @@ If we put it together:
     - Breaks down costs into smaller components and combines them.
     - Accurate but time-consuming and resource-intensive.
 
-    ![image](image3/Screenshot_from_2025-08-21-12-06-44.png)
+    ![image](01-SDLC_images/Bottom_up_cost_estimation.png)
 
 2. **Top-down Estimation**
     - Estimates overall project cost at a high level and then divides into components.
     - Faster but less detailed.
 
-    ![image](image3/Screenshot_from_2025-08-21-12-07-02.png)
+    ![image](01-SDLC_images/top_down_cost_estimation..png)
 
 3. **Three-point Estimation (PERT Method)**
     - Considers **best-case, most likely, and worst-case** scenarios.
@@ -381,7 +382,7 @@ If we put it together:
 
 ## Types of diagrams
 
-![image.png](image3/Screenshot_from_2025-08-22_13-31-43.png)
+![image.png](01-SDLC_images/Types_of_uml_diagrams_chart.png)
 
 ### Structure Diagrams
 
@@ -455,9 +456,10 @@ Interaction diagrams focus on how components or objects collaborate and exchange
 
 ### Class Uml diagram
 
-<div style="text-align: center;">
-  <img src="image3/Screenshot_from_2025-08-22_12-20-33.png" alt="image" />
-</div>
+<p align="center">
+  <img src="01-SDLC_images/Defining_class_table.png" alt="image" />
+</p>
+
 
 
 1. **Class**
@@ -486,7 +488,7 @@ Interaction diagrams focus on how components or objects collaborate and exchange
         - **`#`** Protected (within class and subclasses)
         - **`~`** Package (within package/module).
         
-        ![ClassDiagram+5.png](image3/ClassDiagram+5.png)
+        ![ClassDiagram+5.png](01-SDLC_images/ClassUmlDiagram+5.png)
         
 
 ---
@@ -502,9 +504,10 @@ Interaction diagrams focus on how components or objects collaborate and exchange
 
 it is the snapshot taken at some instance of a time
 
-<div style="text-align: center;">
-  <img src="image3/Screenshot_from_2025-08-22_2-20-46.png" alt="Screenshot" />
-</div>
+<p align="center">
+  <img src="01-SDLC_images/Defining_object_table.png" alt="Screenshot" />
+</p>
+
 
 
 ### Key Characteristics of UML Object Diagrams
@@ -520,7 +523,7 @@ it is the snapshot taken at some instance of a time
 - Object diagrams show instantiated objects with actual data values and current links at a point in time.
 - Object diagrams provide a concrete "snapshot" view of the system's structure during execution.
 
-![Object+Diagram+3.PNG](image3/Object+Diagram+3.PNG)
+![Object+Diagram+3.PNG](01-SDLC_images/Object+umlDiagram+3.PNG)
 
 ### Component uml diagram
 
@@ -535,13 +538,12 @@ It is a structural diagram used to visualize the organization, modular parts (co
     - **Provided Interface:** Services a component offers, shown as a "lollipop" circle attached to the component.
     - **Required Interface:** Services needed by a component, shown as a "socket" (half circle) that connects to a provided interface.
     
-    ![image.png](image3/Screenshot_from_2025-08-22_12-32-41.png)
+    ![image.png](01-SDLC_images/component_relationship.png)
     
 3. **Ports**
     - Interaction points on the boundary of a component where interfaces are accessed. Represented as small squares on the component boundary
 
-![Screenshot from 2025-08-20 15-33-08.png](image3/Screenshot_from_2025-08-22_12-34-48.png)
-
+![image.png](01-SDLC_images/port_in_component.png)
 4.**Relationships and Connectors**
 
 - Dependency (dashed arrow): One component relies on another.
@@ -577,7 +579,7 @@ Package Diagram is a type of structural diagram used in UML to visualize the or
 
 ---
 
-![Package+Diagram.PNG](image3/Package+Diagram.PNG)
+![Package+Diagram.PNG](01-SDLC_images/Package+umlDiagram.PNG)
 
 ### Deployment uml diagram
 
@@ -613,15 +615,16 @@ A deployment diagram for a web application might show:
 - A Database Server Node where the database artifact is deployed.
 - Communication paths between the web server, application server, and database server nodes.
 
-![On-prem+Deployment+Diagram+1.PNG](image3/On-prem+Deployment+Diagram+1.PNG)
+![On-prem+Deployment+Diagram+1.PNG](01-SDLC_images/On-prem+Deployment+umlDiagram+1.PNG)
 
 ## Composite uml diagram
 
 Composite Structure Diagram is a type of structural UML diagram that shows the internal structure of a classifier (such as a class, component, or deployment node) and the interactions between its parts at runtime
 
-<div style="text-align: center;">
-  <img src="image3/Screenshot_from_2025-08-22_12-40-51.png" alt="image" />
-</div>
+<p align="center">
+  <img src="01-SDLC_images/Composite_table.png" alt="image" />
+</p>
+
 
 
 ### Key Components of a Composite Structure Diagram
@@ -698,9 +701,10 @@ Suppose you are modeling a network system and want to represent network-specific
 - Add tagged values such as **`manufacturer`** or **`IP address`** to these stereotypes.
 - Use these stereotypes in your model to clearly indicate network components with domain-specific semantics.
 
-<div style="text-align: center;">
-  <img src="image3/Screenshot_from_2025-08-22_12-48-44.png" alt="image" />
-</div>
+<p align="center">
+  <img src="01-SDLC_images/Profile_table.png" alt="image" />
+</p>
+
 
 
 ## Use case uml Diagram
@@ -738,7 +742,7 @@ A Use Case Diagram in UML is a behavioral diagram that illustrates the functio
     - A rectangle that defines the scope or boundary of the system being modeled.
     - Use cases reside inside this boundary, showing what the system does, while actors remain outside.
 
-![Use+case+diagram.PNG](image3/Use+case+diagram.PNG)
+![Use+case+diagram.PNG](01-SDLC_images/Use+case+umldiagram.PNG)
 
 ## Activity uml diagram
 
@@ -793,7 +797,7 @@ An Activity Diagram in UML is a behavioral diagram that models the workflow or
 
 - Initial Node → Browse Products → Add to Cart → Place Order → Decision (Payment Method: Credit Card or PayPal) → Payment → Final Node.
 
-![Activity+Diagram.PNG](image3/Activity+Diagram.PNG)
+![Activity+Diagram.PNG](01-SDLC_images/Activity+umlDiagram.PNG)
 
 ## State machine diagram
 
@@ -838,7 +842,7 @@ A UML State Machine Diagram (also called a state diagram or statechart) is a b
     States containing nested substates for complex behaviors.
     
 
-![State+Machine+diagram.PNG](image3/State+Machine+diagram.PNG)
+![State+Machine+diagram.PNG](01-SDLC_images/State+Machine+umldiagram.PNG)
 
 ## Sequence Diagram
 
@@ -890,7 +894,7 @@ A Sequence Diagram in UML is a type of interaction diagram that models how obj
     4. Payment Gateway returns "success" to Order Service
     5. Order Service returns "orderConfirmed" to User
 
-![Sequence+diagram.PNG](image3/Sequence+diagram.PNG)
+![Sequence+diagram.PNG](01-SDLC_images/Sequence+umldiagram.PNG)
 
 ## Communication Uml diagram
 
@@ -939,7 +943,7 @@ A UML Communication Diagram is an interaction diagram that visually represents
 
 Objects are connected, and arrows with numbers show who sends each message, in what sequence.
 
-![Communication+Diagram.PNG](image3/Communication+Diagram.PNG)
+![Communication+Diagram.PNG](01-SDLC_images/Communication+umlDiagram.PNG)
 
 ## Timing Uml diagram
 
@@ -978,7 +982,7 @@ A UML Timing Diagram is a specialized interaction diagram that focuses on the 
 - States changing between "Red," "Green," and "Yellow" over time.
 - Timing constraints specify duration for each state (e.g., green lasts 60 seconds).
 
-![Timing+Diagram+1.PNG](image3/Timing+Diagram+1.PNG)
+![Timing+Diagram+1.PNG](01-SDLC_images/Timing+umlDiagram+1.PNG)
 
 ## **Interaction Overview Diagram**
 
@@ -1009,7 +1013,7 @@ An Interaction Overview Diagram in UML is a type of behavioral diagram that co
     Represent the start and end of the interaction overview.
     
 
-![Interaction+overview+diagram+1.PNG](image3/Interaction+overview+diagram+1.PNG)
+![Interaction+overview+diagram+1.PNG](01-SDLC_images/Interaction+overview+umldiagram+1.PNG)
 
 ## Section 7
 
@@ -1224,7 +1228,7 @@ A High-Level Design (HLD) Diagram is a visual representation that outlines the
     with arrows showing interface and data flow between them.
     
 
-![HLD.png](image3/hld.png)
+![HLD.png](01-SDLC_images/hld.png)
 
 ## Data flow diagram
 
@@ -1251,7 +1255,7 @@ A Data Flow Diagram (DFD) is a graphical representation used to visualize the 
     Arrows illustrating the movement of data between external entities, processes, and data stores.
     
 
-![8.5+Resource+DFD+diagram+Final.png](image3/8.5+Resource+DFD+diagram+Final.png)
+![8.5+Resource+DFD+diagram+Final.png](01-SDLC_images/DFD+umldiagram+Final.png)
 
 ## Low level diagram
 
@@ -1358,9 +1362,9 @@ A Wireframe Diagram is a simple, skeletal visual guide that represents the lay
 - Include annotations or notes to describe functionality or behavior of elements.
 - Typically low-fidelity and quick to create for easy changes and feedback.
 
-<div style="text-align: center;">
-  <img src="image3/Screenshot-from-2025-08-26_16-15-00.png" alt="image" />
-</div>
+<p align="center">
+  <img src="01-SDLC_images/Wireframe+umldiagram.png" alt="image" />
+</p>
 
 ## **High-Fidelity (Hi-Fi) and Low-Fidelity (Lo-Fi) Diagrams**
 
@@ -1450,7 +1454,7 @@ A Database Schema Design Diagram visually represents the structure of a databa
     Indicate how many records in one table relate to records in another (e.g., one customer can have many orders).
     
 
-![8.10.Resource-Database+Schema+Design+Diagram.png](image3/8.10.Resource-Database+Schema+Design+Diagram.png)
+![8.10.Resource-Database+Schema+Design+Diagram.png](01-SDLC_images/Database+Schema+Design+umlDiagram.png)
 
 ## Software Architecture
 
@@ -1520,7 +1524,7 @@ A Database Schema Design Diagram visually represents the structure of a databa
     The design is clear, straightforward, and easy to understand, avoiding unnecessary complexity.
     
 
-![9.1.Resource+software+architecture+diagram.png](image3/9.1.Resource+software+architecture+diagram.png)
+![9.1.Resource+software+architecture+diagram.png](01-SDLC_images/software+architecture+umldiagram.png)
 
 
 ## Different Types of architecture
@@ -3828,7 +3832,7 @@ The principles of protection are foundational concepts designed to safeguard inf
 
 ## 1.Waterfall model
 
-![image.png](image3/Screenshot_from_2025-08-26_14-48-00.png)
+![image.png](01-SDLC_images/Waterfall_methedology.png)
 
 ### What is the Waterfall Model?
 
@@ -3881,7 +3885,7 @@ The Waterfall Model is a **linear and sequential** software development method
 
 ## 2.Incremental Model
 
-![image.png](image3/Screenshot_from_2025-08-26_15-06-16.png)
+![image.png](01-SDLC_images/Increamental_methodology.png)
 
 ### What is the Incremental Model?
 
@@ -3937,7 +3941,7 @@ These phases repeat for each increment until the entire system is complete.
 
 ## 3.Iterative Model
 
-![image.png](image3/Screenshot_from_2025-08-26_15-44-54.png)
+![image.png](01-SDLC_images/Iterative_methodology.png)
 
 ### What is the Iterative Model?
 
@@ -3991,7 +3995,7 @@ Each iteration typically includes:
 
 ## 4.V-Model
 
-![image.png](image3/Screenshot_from_2025-08-26_16-05-48.png)
+![image.png](01-SDLC_images/v_model.png)
 
 ### What is the V-Model?
 
@@ -4048,9 +4052,9 @@ The V-Model, also known as the Verification and Validation Model, is a software 
 
 ## 5.Spiral Model
 
-<div style="text-align: center;">
-  <img src="image3/Screenshot-from-2025-08-26_16-15-00.png" alt="image" />
-</div>
+<p align="center">
+  <img src="01-SDLC_images/Spiral_methodology.png" alt="image" />
+</p>
 
 
 ### What is the Spiral Model?
@@ -4111,7 +4115,7 @@ Each cycle (or spiral) includes four main phases:
 
 ## Agile Model in Software Development
 
-![image.png](image3/Screenshot_from_2025-08-26_7-11-35.png)
+![image.png](01-SDLC_images/Agile_methodology.png)
 
 ### What is the Agile Model?
 
@@ -4455,7 +4459,7 @@ The SCRUM process is structured around regular, repeatable cycles called sprints
 
 - The next sprint begins, with the updated product backlog and the process repeating for continuous improvement and delivery.
 
-![image.png](image3/Screenshot_from_2025-08-29_14-41-37.png)
+![image.png](01-SDLC_images/Scrum.png)
 
 ## 2.Kanban Methodology Overview
 
