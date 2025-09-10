@@ -4,7 +4,7 @@ NEFT is a nationwide electronic funds transfer system in India, maintained by th
 
 ### Problem Statement
 
-Before NEFT was introduced, bank transfers in India were mostly manual, slow, and limited by bank working hours, resulting in long delays and inefficiencies. Paper-based processes like cheques and demand drafts required physical handling and clearing, causing inconvenience for customers and businesses alike. NEFT was created to address these problems by providing a secure, nationwide electronic funds transfer system that enables quick, reliable, and paperless transfers between banks. This system automated clearing and settlement, reduced processing time, ensured transparency, and expanded accessibility beyond branch timings—making interbank transfers convenient and efficient for everyone.
+Conventional batch-based fund transfer systems face inherent latency, batching inefficiencies, and limited settlement finality that restrict their utility for time-sensitive payments. NEFT offers near-real-time interbank electronic funds transfers but operates within defined clearing windows, affecting end-to-end speed. To enhance transaction efficiency and widen access, NEFT must evolve to support 24/7 availability, reduce processing times, and improve user experience, while maintaining robust fraud detection and regulatory compliance.
 
 ## Key components
 
