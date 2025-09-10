@@ -6,8 +6,7 @@ RTGS stands for Real-Time Gross Settlement, a system where fund transfers are pr
 
 ## Problem Statement
 
-Before RTGS, large-value transactions relied on slower, batch-based systems like NEFT or paper-based instruments such as cheques, which involved delays and settlement risks. There was a need for a real-time payment system that could settle large transactions instantly and individually to minimize counterparty risk and ensure finality. RTGS was created to fill this gap, providing a secure, transparent, and fast platform for real-time settlement of high-value transactions, thereby enhancing liquidity management and financial system stability.
-
+Legacy large-value payment systems suffer from delayed settlement, credit and liquidity risks, and limited operational hours that constrain modern commerce. RTGS systems seek to deliver immediate, irrevocable settlement of high-value funds transfers in central bank money with continuous availability. Despite improvements, RTGS implementations contend with infrastructure costs, cybersecurity threats, and challenges in interoperability and real-time liquidity management, which must be addressed to fully realize its potential in stabilizing the financial ecosystem.
 ---
 
 ## Key Components
