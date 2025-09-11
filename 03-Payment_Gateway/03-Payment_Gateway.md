@@ -4,7 +4,7 @@ A payment gateway acts as a middle layer, processing payment requests, validatin
 
 ## Problem Statement
 
-A payment gateway is a secure digital service that facilitates the authorization and processing of online financial transactions between customers, merchants, and banks. It encrypts payment data, routes transaction requests to the appropriate financial institutions, and communicates approval or decline status in real time. The goal of creating a payment gateway is to ensure transactions are processed safely, quickly, and accurately for both merchants and customers, while overcoming challenges such as integration with various platforms, preventing fraud, complying with regulations, and delivering a seamless user experience. In summary, a payment gateway acts as the critical bridge in e-commerce, enabling trusted, efficient digital payments and safeguarding sensitive financial information at every stage of the process.
+Payment gateways today often operate within complex, multi-intermediary ecosystems resulting in high transaction fees, delayed settlement, and fragmented user experiences. Challenges include PCI DSS compliance, fraud detection, optimizing authorization throughput, and ensuring global payment method support. Emerging digital payment solutions must integrate instant settlement, minimize operational friction, and enhance transparency while maintaining compliance with payment regulations and adapting to evolving customer expectations.
 
 ## Key Components
 
