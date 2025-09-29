@@ -151,6 +151,6 @@ The stablecoin ecosystem is poised for:
 
 ---
 
-## Section 12: Conclusion
+## Section 12: Thank You
 
 This report provides a comprehensive overview of the stablecoin sector, highlighting its fundamental role in bridging traditional and decentralized finance. For deeper inquiries or tailored research on specific areas, further resources and analysis are available upon request.
