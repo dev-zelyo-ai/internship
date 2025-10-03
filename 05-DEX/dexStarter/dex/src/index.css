@@ -1,0 +1,260 @@
+/* Page layout and background */
+body, #root, .App {
+  margin: 0;
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+    180deg,
+    #191f30 0%,
+    #111426 50%,
+    #070815 100%
+  );
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", 
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #041a57;
+}
+
+/* Header and top bar styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 48px 0 48px;
+  width: 100%;
+}
+
+.header .connectBtn {
+  background: #273358;
+  color: #e0e6f6;
+  border-radius: 20px;
+  padding: 8px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.header .connectBtn:hover {
+  background: #4a69bb;
+}
+
+/* Center the swap content vertically */
+.mainWindow {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Improved Swap Box */
+.tradeBox {
+  background: #14172b;
+  border: 2px solid #23274a;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px 0 rgba(42, 55, 97, 0.32);
+  padding: 32px 36px;
+  min-width: 360px;
+  max-width: 400px;
+  width: 100%;
+  margin: 40px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.tradeBoxHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #d4def7;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 15px;
+}
+
+.ant-input {
+  background: #1b2038 !important;
+  color: #f6faff !important;
+  border: none !important;
+  height: 52px !important;
+  font-size: 1.3rem;
+  border-radius: 15px !important;
+  box-shadow: 0 0 10px #23274a24;
+  padding: 0 18px;
+}
+
+.ant-input::placeholder {
+  color: #5f6783 !important;
+  opacity: 1;
+}
+
+.swapButton {
+  cursor: pointer;
+  background: linear-gradient(90deg,#4263a3 0,#5377d2 100%);
+  color: #fff;
+  border-radius: 15px;
+  padding: 16px 0;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 15px;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 10px #23274a40;
+  border: none;
+  transition: background 0.2s;
+}
+
+.swapButton:disabled {
+  background: #5f6783;
+  color: #bbb;
+  cursor: not-allowed;
+}
+
+.assetOne, .assetTwo {
+  display: flex;
+  align-items: center;
+  background: #23274a;
+  padding: 8px 16px;
+  border-radius: 12px;
+  gap: 10px;
+  font-weight: 600;
+  color: #e0e6f6;
+  cursor: pointer;
+  margin: 8px 0 0 0;
+  transition: background 0.2s;
+}
+
+.assetOne:hover, .assetTwo:hover {
+  background: #384176;
+}
+
+.assetLogo {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.switchButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 0;
+  cursor: pointer;
+}
+
+.switchArrow {
+  font-size: 28px;
+  color: #5377d2;
+  transition: color 0.2s;
+}
+
+.settings .cog {
+  font-size: 22px;
+  color: #aeb4d9;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+/* Modal styles */
+.ant-modal-content, .ant-popover-inner {
+  background: #20254d !important;
+  color: #e0e6f6 !important;
+}
+
+.ant-modal-header {
+  background: #20254d !important;
+  color: #e0e6f6 !important;
+  border-bottom: 1px solid #384176 !important;
+}
+
+.ant-modal-title {
+  color: #e0e6f6 !important;
+}
+
+.ant-modal-close-icon,
+.ant-modal-close-icon:hover {
+  color: #5377d2 !important;
+}
+
+/* Token modal content */
+.modalContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 16px;
+}
+
+.tokenChoice {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 10px 18px;
+  background-color: #23274a;
+  transition: background 0.2s;
+}
+
+.tokenChoice:hover {
+  background-color: #384176;
+}
+
+.tokenLogo {
+  width: 28px;
+  margin-right: 12px;
+}
+
+.tokenChoiceNames {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tokenName {
+  font-size: 1.08rem;
+  font-weight: 500;
+  color: #e0e6f6;
+}
+
+.tokenTicker {
+  font-size: 0.9rem;
+  color: #adb3c9;
+}
+
+/* Fine tune for Antd, popover, radio, etc. */
+.ant-popover-arrow, .ant-radio-button-wrapper-checked::before {
+  background: #5377d2 !important;
+}
+
+.ant-radio-group, .ant-radio-button-wrapper {
+  margin: 8px 0;
+  background: #1b2038 !important;
+  color: #e0e6f6 !important;
+  border-radius: 8px;
+}
+.ant-radio-button-wrapper-checked {
+  background: #5377d2 !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+/* Scrollbar styling for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #20254d;
+}
+::-webkit-scrollbar-thumb {
+  background: #5377d2;
+  border-radius: 8px;
+}

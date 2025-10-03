@@ -1,0 +1,327 @@
+/* Global settings */
+html, body, #root, .App {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #191f30 0%, #111426 50%, #070815 100%);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #e0e6f6;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px;
+  background-color: #1b2038;
+  border-bottom: 1px solid #2f345c;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.headerItem {
+  font-size: 1rem;
+  color: #c8d1f5;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.headerItem:hover {
+  color: #5377d2;
+}
+
+.rightH {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-weight: 500;
+}
+
+.eth {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+}
+
+.connectButton {
+  background-color: #273358;
+  color: #e0e6f6;
+  border-radius: 20px;
+  padding: 8px 22px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  user-select: none;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 8px rgba(39, 51, 88, 0.6);
+}
+
+.connectButton:hover {
+  background-color: #4377c7;
+  box-shadow: 0 6px 10px rgba(67, 119, 199, 0.7);
+}
+
+/* Main container */
+.mainWindow {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Swap box */
+.tradeBox {
+  background: #181b2e;
+  border-radius: 24px;
+  border: 2px solid #23274a;
+  padding: 40px 48px;
+  max-width: 440px;
+  width: 100%;
+  margin: 40px auto 0;
+  box-shadow: 0 10px 32px 0 rgba(42, 55, 97, 0.30);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease;
+}
+
+.tradeBox:hover {
+  box-shadow: 0 12px 40px 0 rgba(42, 55, 97, 0.45);
+}
+
+.tradeBoxHeader {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #d4def7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.ant-input {
+  height: 60px !important;
+  background: #21233b !important;
+  color: #f6faff !important;
+  font-size: 1.5rem !important;
+  border-radius: 18px !important;
+  padding: 0 22px !important;
+  border: none !important;
+  box-shadow: 0 0 14px #23274a55 !important;
+  transition: box-shadow 0.3s ease;
+}
+
+.ant-input:focus, .ant-input:hover {
+  box-shadow: 0 0 18px #5377d2bb !important;
+}
+
+.ant-input::placeholder {
+  color: #5f6783 !important;
+  opacity: 1;
+}
+
+.swapButton {
+  cursor: pointer;
+  background: linear-gradient(90deg, #4263a3 0%, #5377d2 100%);
+  color: white;
+  font-weight: 800;
+  border-radius: 24px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 28px;
+  box-shadow: 0 6px 18px #23274a75;
+  border: none;
+  transition: background 0.3s, box-shadow 0.3s;
+  user-select: none;
+}
+
+.swapButton:hover:not(:disabled) {
+  background: linear-gradient(90deg, #2a4a8e 0%, #3e65b1 100%);
+  box-shadow: 0 10px 26px #3957ce85;
+}
+
+.swapButton:disabled {
+  background: #5f6783;
+  color: #bbb;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.assetOne,
+.assetTwo {
+  display: flex;
+  align-items: center;
+  background: #23274a;
+  padding: 16px 24px;
+  border-radius: 18px;
+  font-weight: 600;
+  color: #e0e6f6;
+  cursor: pointer;
+  margin-top: 16px;
+  gap: 16px;
+  font-size: 1.2rem;
+  transition: background 0.3s;
+}
+
+.assetOne:hover,
+.assetTwo:hover {
+  background: #384176;
+}
+
+.assetLogo {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  margin-right: 12px;
+  transition: transform 0.3s;
+}
+
+.assetOne:hover .assetLogo,
+.assetTwo:hover .assetLogo {
+  transform: scale(1.1);
+}
+
+.switchButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0;
+  cursor: pointer;
+}
+
+.switchArrow {
+  font-size: 36px;
+  color: #5377d2;
+  transition: color 0.3s;
+}
+
+.switchButton:hover .switchArrow {
+  color: #2a4a8e;
+}
+
+/* Modal and popover tweaks */
+.ant-modal-content,
+.ant-popover-inner {
+  background: #20254d !important;
+  color: #e0e6f6 !important;
+  border-radius: 20px !important;
+}
+
+.ant-modal-header {
+  background: #20254d !important;
+  border-bottom: 1px solid #384176 !important;
+}
+
+.ant-modal-title {
+  color: #e0e6f6 !important;
+  font-weight: 600;
+}
+
+.ant-modal-close-icon,
+.ant-modal-close-icon:hover {
+  color: #4263a3 !important;
+}
+
+/* Modal content */
+.modalContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 24px;
+}
+
+.tokenChoice {
+  display: flex;
+  align-items: center;
+  background: #23274a;
+  padding: 18px 26px;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.tokenChoice:hover {
+  background: #384176;
+}
+
+.tokenLogo {
+  width: 38px;
+  margin-right: 18px;
+}
+
+.tokenChoiceNames {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tokenName {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #e0e6f6;
+}
+
+.tokenTicker {
+  font-size: 1.1rem;
+  color: #adb3c9;
+}
+
+/* Antd radios */
+.ant-popover-arrow,
+.ant-radio-button-wrapper-checked::before {
+  background: #5377d2 !important;
+}
+
+.ant-radio-group,
+.ant-radio-button-wrapper {
+  margin: 14px 0 !important;
+  background: #1b2038 !important;
+  color: #e0e6f6 !important;
+  border-radius: 14px !important;
+}
+
+.ant-radio-button-wrapper-checked {
+  background: #5377d2 !important;
+  color: white !important;
+  border: none !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  background: #20254d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5377d2;
+  border-radius: 12px;
+}
